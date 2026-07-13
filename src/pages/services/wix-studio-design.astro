@@ -1,0 +1,146 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Wix Studio Design & Visual Accelerator" 
+  description="High-end interactive websites built in Wix Studio. Fluid typography, responsive grids, interactive animations, Velo API scripting, and Zero server overhead."
+>
+  <section class="relative pt-36 pb-20 overflow-hidden bg-surface">
+    <!-- Backlights -->
+    <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary-maroon/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(193,199,207,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(193,199,207,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+
+    <div class="max-w-[1280px] mx-auto px-4 md:px-8 relative z-10">
+      
+      <!-- Back Link -->
+      <a href="/" class="inline-flex items-center gap-2 text-xs font-semibold text-primary-accent hover:text-white transition-colors uppercase tracking-[0.15em] mb-8 focus:outline-none">
+        ← Back to Overview
+      </a>
+
+      <!-- Page Header -->
+      <div class="max-w-[800px] mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-[10px] font-bold text-blue-400 tracking-[0.1em] uppercase mb-4">
+          Visual Accelerator
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+          Wix Studio Development. <span class="bg-gradient-to-r from-secondary-silver via-white to-primary-accent bg-clip-text text-transparent">No Maintenance. Just Speed.</span>
+        </h1>
+        <p class="text-base md:text-lg text-secondary-silver leading-relaxed">
+          Stunning interactive animations and premium fluid typography without server maintenance overhead. We build pixel-perfect structures using Wix Studio's engine and extend functionality using custom Velo JavaScript code.
+        </p>
+      </div>
+
+      <!-- Specs & Performance Highlights -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <div class="p-6 border border-outline-ghost bg-surface-container-low rounded-lg">
+          <span class="text-xs uppercase tracking-widest text-on-surface-variant/70 font-semibold block mb-2">Time-to-Market</span>
+          <span class="text-3xl font-extrabold text-white block mb-1">14 Days Launch</span>
+          <span class="text-xs text-secondary-silver">Rapid UI development phase bypassing traditional database configuration.</span>
+        </div>
+        <div class="p-6 border border-outline-ghost bg-surface-container-low rounded-lg">
+          <span class="text-xs uppercase tracking-widest text-on-surface-variant/70 font-semibold block mb-2">Maintenance Cost</span>
+          <span class="text-3xl font-extrabold text-white block mb-1">$0.00 Server Fees</span>
+          <span class="text-xs text-secondary-silver">Managed infrastructure with automatic security patches and scaling.</span>
+        </div>
+        <div class="p-6 border border-outline-ghost bg-surface-container-low rounded-lg">
+          <span class="text-xs uppercase tracking-widest text-on-surface-variant/70 font-semibold block mb-2">Interactive Depth</span>
+          <span class="text-3xl font-extrabold text-white block mb-1">Custom Velo Scripting</span>
+          <span class="text-xs text-secondary-silver">Wix database pipelines, dynamic search models, and bookings flows.</span>
+        </div>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20" id="animations">
+        
+        <!-- Left Column: Key Capabilities -->
+        <div class="space-y-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Wix Studio Capabilities</h2>
+          
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-default bg-primary-maroon/20 border border-primary-accent/30 flex items-center justify-center text-primary-accent shrink-0 font-bold text-sm">01</div>
+              <div>
+                <h3 class="text-base font-bold text-white mb-2" id="migration">Figma-to-Wix Studio</h3>
+                <p class="text-sm text-on-surface-variant/90 leading-relaxed">
+                  Translating responsive Figma mockups into fluid layouts. We configure grid nesting, docking ratios, and custom breakpoints for an identical appearance across small mobile viewports and large desktop screens.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-default bg-primary-maroon/20 border border-primary-accent/30 flex items-center justify-center text-primary-accent shrink-0 font-bold text-sm">02</div>
+              <div>
+                <h3 class="text-base font-bold text-white mb-2" id="velo">Velo API & Database Engineering</h3>
+                <p class="text-sm text-on-surface-variant/90 leading-relaxed">
+                  Extending the basic builder capabilities. We write custom JavaScript using Velo APIs to manage collections, fetch external data nodes, configure user filters, and handle booking/reservation scripts.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-default bg-primary-maroon/20 border border-primary-accent/30 flex items-center justify-center text-primary-accent shrink-0 font-bold text-sm">03</div>
+              <div>
+                <h3 class="text-base font-bold text-white mb-2" id="headless">Hybrid Wix Headless</h3>
+                <p class="text-sm text-on-surface-variant/90 leading-relaxed">
+                  Leveraging Wix's back-end booking engine, commerce catalogs, and user databases while serving the UI from other custom frameworks, maintaining maximum architecture flexibility.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Specifications Detail Card -->
+        <div class="p-8 border border-outline-ghost/40 bg-surface-container rounded-lg relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-primary-maroon/10 rounded-full blur-2xl pointer-events-none"></div>
+          <h3 class="text-lg font-bold text-white mb-6 uppercase tracking-wider text-xs border-b border-outline-ghost/20 pb-4">Wix Studio Specifications</h3>
+          
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-outline-ghost/20">
+                <td class="py-3 font-semibold text-secondary-silver">Layout Engine</td>
+                <td class="py-3 text-right text-white">Flexbox, CSS Grid, Fluid Typography</td>
+              </tr>
+              <tr class="border-b border-outline-ghost/20">
+                <td class="py-3 font-semibold text-secondary-silver">Developer Scripting</td>
+                <td class="py-3 text-right text-white">Velo JavaScript (Node.js runtime)</td>
+              </tr>
+              <tr class="border-b border-outline-ghost/20">
+                <td class="py-3 font-semibold text-secondary-silver">Database Support</td>
+                <td class="py-3 text-right text-white">Wix Data Collections, External DB Sync</td>
+              </tr>
+              <tr class="border-b border-outline-ghost/20">
+                <td class="py-3 font-semibold text-secondary-silver">Headless Coverage</td>
+                <td class="py-3 text-right text-white">Wix Headless APIs (Commerce, Bookings)</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-semibold text-secondary-silver">Hosting Infrastructure</td>
+                <td class="py-3 text-right text-white">Wix Multi-Cloud (AWS + Google Cloud)</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <div class="mt-8 p-4 bg-surface-container-low border border-outline-ghost/50 rounded-default text-xs text-on-surface-variant">
+            <strong class="text-white block mb-1">Visual Accelerator Program:</strong> We help clients launch beautiful sites in days, hand off a dynamic CMS editor dashboard, and avoid ongoing retainer developers dependencies.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Footer -->
+      <div class="p-8 border border-primary-accent/20 bg-primary-maroon/5 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-lg font-bold text-white mb-1">Ready to design a rapid visual experience?</h3>
+          <p class="text-sm text-secondary-silver">Book a tech strategy call to explore a clean, zero-maintenance Wix Studio architecture.</p>
+        </div>
+        <a 
+          href="/#contact" 
+          class="w-full sm:w-auto px-6 py-3 text-sm font-semibold text-white bg-primary-maroon border border-primary-accent/40 rounded-default glow-btn-primary hover:text-white transition-all shadow-lg text-center"
+        >
+          Book Strategy Call
+        </a>
+      </div>
+
+    </div>
+  </section>
+</Layout>

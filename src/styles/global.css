@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #121416;
+  --color-surface-dim: #121416;
+  --color-surface-bright: #38393c;
+  --color-surface-container-lowest: #0c0e10;
+  --color-surface-container-low: #1a1c1e;
+  --color-surface-container: #1e2022;
+  --color-surface-container-high: #282a2c;
+  --color-surface-container-highest: #333537;
+  --color-on-surface: #e2e2e5;
+  --color-on-surface-variant: #e0bfbf;
+  --color-outline-ghost: rgba(193, 199, 207, 0.12); /* 12% opacity Metallic Silver ghost border */
+  --color-outline-ghost-active: rgba(193, 199, 207, 0.25);
+  --color-primary-accent: #ffb3b5;
+  --color-primary-maroon: #800020;
+  --color-primary-maroon-dark: #680018;
+  --color-primary-maroon-light: #ff828a;
+  --color-secondary-silver: #c1c7cf;
+  --color-on-secondary-silver: #2b3137;
+  
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  --animate-marquee: marquee 25s linear infinite;
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #121416;
+  }
+  
+  body {
+    background-color: #121416;
+    color: #e2e2e5;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Premium dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #121416;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #282a2c;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffb3b5;
+  }
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(26, 28, 30, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(193, 199, 207, 0.12);
+}
+
+.glow-btn-primary {
+  box-shadow: 0 0 0 0px rgba(128, 0, 32, 0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-btn-primary:hover {
+  box-shadow: 0 0 20px 4px rgba(128, 0, 32, 0.4);
+}
+
+/* Custom visual glow effects for active states */
+.glow-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-card:hover {
+  border-color: rgba(255, 179, 181, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(128, 0, 32, 0.25);
+  transform: translateY(-2px);
+}

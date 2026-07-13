@@ -514,164 +514,264 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 8. FINAL CONVERSION BLOCK (INTERACTIVE FORM CAPTURE) -->
+  <!-- 8. FINAL CONVERSION BLOCK (INTERACTIVE FORM CAPTURE & CONTACT CHANNELS) -->
   <section class="py-24 md:py-32 bg-surface relative" id="contact">
     <!-- Red glowing bulb behind form -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-maroon/10 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-primary-maroon/10 rounded-full blur-[180px] pointer-events-none"></div>
 
-    <div class="max-w-[720px] mx-auto px-4 relative z-10">
-      
-      <!-- Header -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Align Your Tech Strategy
-        </h2>
-        <p class="text-base text-secondary-silver">
-          Answer a few questions, and our engineers will prepare a custom recommendations deck for your team.
-        </p>
-      </div>
+    <div class="max-w-[1280px] mx-auto px-4 md:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Column: Direct Communication Channels -->
+        <div class="lg:col-span-5 space-y-10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-[10px] font-bold text-primary-accent tracking-[0.1em] uppercase mb-4">
+              Direct Access
+            </div>
+            <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
+              Connect With Our Engineers
+            </h2>
+            <p class="text-base text-secondary-silver leading-relaxed">
+              Have an urgent migration scope, premium design project, or high-performance stack alignment? Reach out directly via our secure communication lines or submit the strategy form.
+            </p>
+          </div>
 
-      <!-- Interactive Form Container -->
-      <div class="bg-surface-container border border-outline-ghost/50 rounded-lg p-6 md:p-10 shadow-2xl relative">
-        <form class="space-y-8" id="strategy-form">
-          
-          <!-- Question 1: Goal Select (Custom Button Pills) -->
-          <div class="space-y-3">
-            <label class="block text-sm font-semibold tracking-wide text-white">What is your main goal?</label>
-            <input type="hidden" name="goal" id="goal-input" required />
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <button 
-                type="button" 
-                class="choice-btn px-4 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-sm text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
-                data-type="goal" 
-                data-value="Launch Fast"
+          <!-- WhatsApp Contacts Grid -->
+          <div class="space-y-4">
+            <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-primary-accent/80">
+              Direct WhatsApp Channels
+            </h3>
+            <div class="grid gap-3">
+              <!-- WhatsApp Line 1 -->
+              <a 
+                href="https://wa.me/923202922104" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="flex items-center gap-4 p-4 rounded-default border border-outline-ghost/40 bg-surface-container-low hover:bg-surface-container hover:border-primary-accent/40 hover:-translate-y-0.5 transition-all group duration-300"
               >
-                Launch Fast
-              </button>
-              <button 
-                type="button" 
-                class="choice-btn px-4 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-sm text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
-                data-type="goal" 
-                data-value="Scale Sales"
+                <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-all duration-300">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.588 1.981 14.117.957 11.5.957c-5.442 0-9.87 4.372-9.873 9.802 0 1.761.476 3.483 1.38 5.02L2.012 22.02l6.216-1.61c.012-.008.02-.012.02-.012zm11.362-5.464c-.29-.146-1.727-.856-1.996-.954-.269-.099-.465-.148-.659.146-.196.297-.753.954-.925 1.15-.17.195-.34.22-.63.074-.29-.147-1.228-.456-2.34-1.455-.866-.777-1.45-1.737-1.62-2.032-.17-.294-.018-.454.13-.6.132-.133.29-.34.437-.509.146-.17.196-.289.293-.483.097-.195.049-.364-.025-.512-.074-.148-.659-1.597-.902-2.18-.238-.57-.48-.492-.659-.502-.17-.008-.364-.01-.559-.01-.196 0-.513.073-.78.373-.269.3-.1.997-.1 2.2 0 1.205.877 2.37 1.002 2.535.124.166 1.723 2.648 4.181 3.712.585.253 1.04.404 1.393.518.59.187 1.125.161 1.548.098.472-.07 1.45-.594 1.654-1.168.204-.573.204-1.064.143-1.163-.062-.099-.227-.149-.519-.296z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-white group-hover:text-primary-accent transition-colors">Technical Consulting</h4>
+                  <p class="text-xs text-secondary-silver mt-0.5">0320-2922104</p>
+                </div>
+              </a>
+
+              <!-- WhatsApp Line 2 -->
+              <a 
+                href="https://wa.me/923172149342" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="flex items-center gap-4 p-4 rounded-default border border-outline-ghost/40 bg-surface-container-low hover:bg-surface-container hover:border-primary-accent/40 hover:-translate-y-0.5 transition-all group duration-300"
               >
-                Scale Sales
-              </button>
-              <button 
-                type="button" 
-                class="choice-btn px-4 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-sm text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
-                data-type="goal" 
-                data-value="Improve Speed"
+                <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-all duration-300">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.588 1.981 14.117.957 11.5.957c-5.442 0-9.87 4.372-9.873 9.802 0 1.761.476 3.483 1.38 5.02L2.012 22.02l6.216-1.61c.012-.008.02-.012.02-.012zm11.362-5.464c-.29-.146-1.727-.856-1.996-.954-.269-.099-.465-.148-.659.146-.196.297-.753.954-.925 1.15-.17.195-.34.22-.63.074-.29-.147-1.228-.456-2.34-1.455-.866-.777-1.45-1.737-1.62-2.032-.17-.294-.018-.454.13-.6.132-.133.29-.34.437-.509.146-.17.196-.289.293-.483.097-.195.049-.364-.025-.512-.074-.148-.659-1.597-.902-2.18-.238-.57-.48-.492-.659-.502-.17-.008-.364-.01-.559-.01-.196 0-.513.073-.78.373-.269.3-.1.997-.1 2.2 0 1.205.877 2.37 1.002 2.535.124.166 1.723 2.648 4.181 3.712.585.253 1.04.404 1.393.518.59.187 1.125.161 1.548.098.472-.07 1.45-.594 1.654-1.168.204-.573.204-1.064.143-1.163-.062-.099-.227-.149-.519-.296z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-white group-hover:text-primary-accent transition-colors">Project Strategy</h4>
+                  <p class="text-xs text-secondary-silver mt-0.5">0317-2149342</p>
+                </div>
+              </a>
+
+              <!-- WhatsApp Line 3 -->
+              <a 
+                href="https://wa.me/923212481412" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="flex items-center gap-4 p-4 rounded-default border border-outline-ghost/40 bg-surface-container-low hover:bg-surface-container hover:border-primary-accent/40 hover:-translate-y-0.5 transition-all group duration-300"
               >
-                Improve Speed
-              </button>
+                <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-all duration-300">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.588 1.981 14.117.957 11.5.957c-5.442 0-9.87 4.372-9.873 9.802 0 1.761.476 3.483 1.38 5.02L2.012 22.02l6.216-1.61c.012-.008.02-.012.02-.012zm11.362-5.464c-.29-.146-1.727-.856-1.996-.954-.269-.099-.465-.148-.659.146-.196.297-.753.954-.925 1.15-.17.195-.34.22-.63.074-.29-.147-1.228-.456-2.34-1.455-.866-.777-1.45-1.737-1.62-2.032-.17-.294-.018-.454.13-.6.132-.133.29-.34.437-.509.146-.17.196-.289.293-.483.097-.195.049-.364-.025-.512-.074-.148-.659-1.597-.902-2.18-.238-.57-.48-.492-.659-.502-.17-.008-.364-.01-.559-.01-.196 0-.513.073-.78.373-.269.3-.1.997-.1 2.2 0 1.205.877 2.37 1.002 2.535.124.166 1.723 2.648 4.181 3.712.585.253 1.04.404 1.393.518.59.187 1.125.161 1.548.098.472-.07 1.45-.594 1.654-1.168.204-.573.204-1.064.143-1.163-.062-.099-.227-.149-.519-.296z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-white group-hover:text-primary-accent transition-colors">Client Operations</h4>
+                  <p class="text-xs text-secondary-silver mt-0.5">0321-2481412</p>
+                </div>
+              </a>
             </div>
           </div>
 
-          <!-- Question 2: Platform Select (Custom Button Pills) -->
-          <div class="space-y-3">
-            <label class="block text-sm font-semibold tracking-wide text-white">Do you have a preferred platform?</label>
-            <input type="hidden" name="platform" id="platform-input" required />
-            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
-              <button 
-                type="button" 
-                class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer col-span-2 sm:col-span-1"
-                data-type="platform" 
-                data-value="Open to recommendations"
-              >
-                Open to Recs
-              </button>
-              <button 
-                type="button" 
-                class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
-                data-type="platform" 
-                data-value="WordPress"
-              >
-                WordPress
-              </button>
-              <button 
-                type="button" 
-                class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
-                data-type="platform" 
-                data-value="Shopify"
-              >
-                Shopify
-              </button>
-              <button 
-                type="button" 
-                class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
-                data-type="platform" 
-                data-value="Wix"
-              >
-                Wix Studio
-              </button>
-              <button 
-                type="button" 
-                class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
-                data-type="platform" 
-                data-value="Custom Code"
-              >
-                Custom Code
-              </button>
+          <!-- Email Contacts -->
+          <div class="space-y-4">
+            <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-primary-accent/80">
+              Official Email
+            </h3>
+            <a 
+              href="mailto:codivexagency@gmail.com" 
+              class="flex items-center gap-4 p-4 rounded-default border border-outline-ghost/40 bg-surface-container-low hover:bg-surface-container hover:border-primary-accent/40 hover:-translate-y-0.5 transition-all group duration-300"
+            >
+              <div class="w-10 h-10 rounded-full bg-primary-maroon/20 border border-primary-accent/30 flex items-center justify-center text-primary-accent group-hover:scale-110 transition-all duration-300">
+                <svg class="w-5 h-5 fill-none viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-white group-hover:text-primary-accent transition-colors">Project Proposals</h4>
+                <p class="text-xs text-secondary-silver mt-0.5">codivexagency@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Form Capture -->
+        <div class="lg:col-span-7">
+          <div class="bg-surface-container border border-outline-ghost/50 rounded-lg p-6 md:p-10 shadow-2xl relative">
+            <div class="mb-8">
+              <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Align Your Tech Strategy</h3>
+              <p class="text-xs text-secondary-silver">
+                Answer a few questions, and our engineers will prepare a custom recommendations deck for your team.
+              </p>
             </div>
-          </div>
+            
+            <form class="space-y-8" id="strategy-form">
+              
+              <!-- Question 1: Goal Select (Custom Button Pills) -->
+              <div class="space-y-3">
+                <label class="block text-sm font-semibold tracking-wide text-white">What is your main goal?</label>
+                <input type="hidden" name="goal" id="goal-input" required />
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <button 
+                    type="button" 
+                    class="choice-btn px-4 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-sm text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
+                    data-type="goal" 
+                    data-value="Launch Fast"
+                  >
+                    Launch Fast
+                  </button>
+                  <button 
+                    type="button" 
+                    class="choice-btn px-4 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-sm text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
+                    data-type="goal" 
+                    data-value="Scale Sales"
+                  >
+                    Scale Sales
+                  </button>
+                  <button 
+                    type="button" 
+                    class="choice-btn px-4 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-sm text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
+                    data-type="goal" 
+                    data-value="Improve Speed"
+                  >
+                    Improve Speed
+                  </button>
+                </div>
+              </div>
 
-          <!-- Contact Inputs -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div class="space-y-1.5">
-              <label for="name" class="block text-sm font-semibold tracking-wide text-secondary-silver">Full Name</label>
-              <input 
-                type="text" 
-                id="name" 
-                required 
-                class="w-full bg-surface-container-low border-b border-outline-ghost/60 focus:border-primary-accent py-3 px-1 text-sm text-white focus:outline-none transition-colors"
-                placeholder="John Doe"
-              />
+              <!-- Question 2: Platform Select (Custom Button Pills) -->
+              <div class="space-y-3">
+                <label class="block text-sm font-semibold tracking-wide text-white">Do you have a preferred platform?</label>
+                <input type="hidden" name="platform" id="platform-input" required />
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                  <button 
+                    type="button" 
+                    class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer col-span-2 sm:col-span-1"
+                    data-type="platform" 
+                    data-value="Open to recommendations"
+                  >
+                    Open to Recs
+                  </button>
+                  <button 
+                    type="button" 
+                    class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
+                    data-type="platform" 
+                    data-value="WordPress"
+                  >
+                    WordPress
+                  </button>
+                  <button 
+                    type="button" 
+                    class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
+                    data-type="platform" 
+                    data-value="Shopify"
+                  >
+                    Shopify
+                  </button>
+                  <button 
+                    type="button" 
+                    class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
+                    data-type="platform" 
+                    data-value="Wix"
+                  >
+                    Wix Studio
+                  </button>
+                  <button 
+                    type="button" 
+                    class="choice-btn px-2 py-3 bg-surface-container-low border border-outline-ghost rounded-default text-xs text-secondary-silver font-medium text-center transition-all hover:bg-surface-container-high focus:outline-none cursor-pointer"
+                    data-type="platform" 
+                    data-value="Custom Code"
+                  >
+                    Custom Code
+                  </button>
+                </div>
+              </div>
+
+              <!-- Contact Inputs -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="space-y-1.5">
+                  <label for="name" class="block text-sm font-semibold tracking-wide text-secondary-silver">Full Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    required 
+                    class="w-full bg-surface-container-low border-b border-outline-ghost/60 focus:border-primary-accent py-3 px-1 text-sm text-white focus:outline-none transition-colors"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="space-y-1.5">
+                  <label for="email" class="block text-sm font-semibold tracking-wide text-secondary-silver">Email Address</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    required 
+                    class="w-full bg-surface-container-low border-b border-outline-ghost/60 focus:border-primary-accent py-3 px-1 text-sm text-white focus:outline-none transition-colors"
+                    placeholder="john@company.com"
+                  />
+                </div>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="message" class="block text-sm font-semibold tracking-wide text-secondary-silver">Project Brief / Core Requirements</label>
+                <textarea 
+                  id="message" 
+                  rows="3" 
+                  required 
+                  class="w-full bg-surface-container-low border-b border-outline-ghost/60 focus:border-primary-accent py-3 px-1 text-sm text-white focus:outline-none transition-colors resize-none"
+                  placeholder="Tell us about your digital scale, required integrations, and timeframe..."
+                ></textarea>
+              </div>
+
+              <!-- Submit CTA -->
+              <button 
+                type="submit" 
+                class="w-full py-4 text-base font-bold text-white bg-primary-maroon border border-primary-accent/40 rounded-default glow-btn-primary cursor-pointer hover:text-white transition-all shadow-lg text-center"
+                style="box-shadow: inset 0 1px 0 rgba(255, 179, 181, 0.2);"
+              >
+                Submit Strategy Request
+              </button>
+
+            </form>
+
+            <!-- Success overlay state -->
+            <div id="success-overlay" class="absolute inset-0 bg-surface-container rounded-lg flex flex-col justify-center items-center p-8 text-center opacity-0 pointer-events-none transition-opacity duration-300">
+              <div class="w-16 h-16 bg-primary-maroon/20 border border-primary-accent/40 rounded-full flex items-center justify-center text-primary-accent mb-6 animate-bounce">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">Strategy Plan Queued</h3>
+              <p class="text-sm text-secondary-silver max-w-[400px]">
+                Thank you! Our digital architecture engineering team has received your goals. We're analyzing your platform compatibility and will email your recommendations dashboard in 24 hours.
+              </p>
             </div>
-            <div class="space-y-1.5">
-              <label for="email" class="block text-sm font-semibold tracking-wide text-secondary-silver">Email Address</label>
-              <input 
-                type="email" 
-                id="email" 
-                required 
-                class="w-full bg-surface-container-low border-b border-outline-ghost/60 focus:border-primary-accent py-3 px-1 text-sm text-white focus:outline-none transition-colors"
-                placeholder="john@company.com"
-              />
-            </div>
+
           </div>
-
-          <div class="space-y-1.5">
-            <label for="message" class="block text-sm font-semibold tracking-wide text-secondary-silver">Project Brief / Core Requirements</label>
-            <textarea 
-              id="message" 
-              rows="3" 
-              required 
-              class="w-full bg-surface-container-low border-b border-outline-ghost/60 focus:border-primary-accent py-3 px-1 text-sm text-white focus:outline-none transition-colors resize-none"
-              placeholder="Tell us about your digital scale, required integrations, and timeframe..."
-            ></textarea>
-          </div>
-
-          <!-- Submit CTA -->
-          <button 
-            type="submit" 
-            class="w-full py-4 text-base font-bold text-white bg-primary-maroon border border-primary-accent/40 rounded-default glow-btn-primary cursor-pointer hover:text-white transition-all shadow-lg text-center"
-            style="box-shadow: inset 0 1px 0 rgba(255, 179, 181, 0.2);"
-          >
-            Submit Strategy Request
-          </button>
-
-        </form>
-
-        <!-- Success overlay state -->
-        <div id="success-overlay" class="absolute inset-0 bg-surface-container rounded-lg flex flex-col justify-center items-center p-8 text-center opacity-0 pointer-events-none transition-opacity duration-300">
-          <div class="w-16 h-16 bg-primary-maroon/20 border border-primary-accent/40 rounded-full flex items-center justify-center text-primary-accent mb-6 animate-bounce">
-            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Strategy Plan Queued</h3>
-          <p class="text-sm text-secondary-silver max-w-[400px]">
-            Thank you! Our digital architecture engineering team has received your goals. We're analyzing your platform compatibility and will email your recommendations dashboard in 24 hours.
-          </p>
         </div>
 
       </div>

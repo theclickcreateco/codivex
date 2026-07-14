@@ -4,15 +4,28 @@ import nodemailer from 'nodemailer';
 export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
+  // Guard: fail fast with a clear message if SMTP is not configured
+  const smtpUser = import.meta.env.SMTP_USER;
+  const smtpPass = import.meta.env.SMTP_PASS;
+  const smtpTo   = import.meta.env.SMTP_TO ?? smtpUser;
+
+  if (!smtpUser || !smtpPass) {
+    console.error('[contact] SMTP_USER or SMTP_PASS env var is missing.');
+    return new Response(JSON.stringify({ success: false, message: 'Server misconfiguration.' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
   try {
     const formData = await request.formData();
 
-    const name       = formData.get('name')?.toString().trim()     ?? '';
-    const email      = formData.get('email')?.toString().trim()    ?? '';
-    const goal       = formData.get('goal')?.toString().trim()     ?? '';
-    const platform   = formData.get('platform')?.toString().trim() ?? '';
-    const budget     = formData.get('budget')?.toString().trim()   ?? '';
-    const message    = formData.get('message')?.toString().trim()  ?? '';
+    const name     = formData.get('name')?.toString().trim()     ?? '';
+    const email    = formData.get('email')?.toString().trim()    ?? '';
+    const goal     = formData.get('goal')?.toString().trim()     ?? '';
+    const platform = formData.get('platform')?.toString().trim() ?? '';
+    const budget   = formData.get('budget')?.toString().trim()   ?? '';
+    const message  = formData.get('message')?.toString().trim()  ?? '';
 
     if (!name || !email) {
       return new Response(JSON.stringify({ success: false, message: 'Name and email are required.' }), {
@@ -25,15 +38,12 @@ export const POST: APIRoute = async ({ request }) => {
       host: 'smtp.gmail.com',
       port: 465,
       secure: true,
-      auth: {
-        user: import.meta.env.SMTP_USER,
-        pass: import.meta.env.SMTP_PASS,
-      },
+      auth: { user: smtpUser, pass: smtpPass },
     });
 
     await transporter.sendMail({
-      from: `"Codivex Website" <${import.meta.env.SMTP_USER}>`,
-      to: import.meta.env.SMTP_TO ?? import.meta.env.SMTP_USER,
+      from: `"Codivex Website" <${smtpUser}>`,
+      to: smtpTo,
       replyTo: email,
       subject: 'New Project Strategy Inquiry – Codivex',
       html: `

@@ -24,6 +24,30 @@
 			"dest": "_render"
 		},
 		{
+			"src": "^/services/headless-commerce/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/services/nextjs-astro-web-apps/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/services/shopify-development/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/services/wix-studio-design/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/services/wordpress-block-themes/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/$",
+			"dest": "_render"
+		},
+		{
 			"src": "^/404/?$",
 			"dest": "_render"
 		},

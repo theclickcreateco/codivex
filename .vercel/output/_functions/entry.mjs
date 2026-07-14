@@ -1,5 +1,6 @@
-import { B as InvalidGetStaticPathsReturn, C as AstroResponseHeadersReassigned, F as GetStaticPathsRequired, G as MiddlewareNoDataOrNextCalled, K as MiddlewareNotAResponse, M as ForbiddenRewrite, N as GetStaticPathsExpectedParams, P as GetStaticPathsInvalidRouteParam, S as ActionsReturnedInvalidDataError, T as ClientAddressNotAvailable, U as LocalsNotAnObject, W as LocalsReassigned, _t as i18nNoLocaleFoundInPath, a as fileExtension, at as PrerenderDynamicEndpointPathCollide, b as matchPattern, ct as ResponseSentError, d as removeLeadingForwardSlash, dt as SessionStorageSaveError, ft as StaticClientAddressNotAvailable, h as trimSlashes, i as collapseDuplicateTrailingSlashes, it as PrerenderClientAddressNotAvailable, l as joinPaths, lt as RewriteWithBodyUsed, m as slash, n as collapseDuplicateLeadingSlashes, o as hasFileExtension, p as removeTrailingForwardSlash, pt as UnableToLoadLogger, r as collapseDuplicateSlashes, rt as PageNumberParamNotFound, s as isInternalPath, st as ReservedSlotName, t as appendForwardSlash, tt as NoMatchingStaticPathFound, u as prependForwardSlash, ut as SessionStorageInitError, vt as AstroError, w as CacheNotEnabled, x as ActionNotFoundError, z as InvalidGetStaticPathsEntry } from "./chunks/path_JcdHq8sq.mjs";
-import { A as originPathnameSymbol, C as ASTRO_GENERATOR, D as appSymbol, E as REROUTABLE_STATUS_CODES, M as responseSentSymbol$1, O as clientAddressSymbol, S as ASTRO_ERROR_HEADER, T as REDIRECT_STATUS_CODES, a as chunkToString, b as isRoute404, c as isRenderTemplateResult, d as decryptString, f as generateCspDigest, g as isAstroComponentFactory, h as isRenderInstruction, i as renderComponent, j as pipelineSymbol, k as fetchStateSymbol, l as renderTemplate, n as renderPage, o as createSlotValueFromString, r as renderJSX, s as renderSlotToString, u as decodeKey, v as renderEndpoint, w as DEFAULT_404_COMPONENT, x as isRoute500 } from "./chunks/server_BsiapYr9.mjs";
+import { $ as AstroError, B as PrerenderDynamicEndpointPathCollide, D as MiddlewareNotAResponse, E as MiddlewareNoDataOrNextCalled, G as SessionStorageInitError, H as ReservedSlotName, I as NoMatchingStaticPathFound, J as UnableToLoadLogger, K as SessionStorageSaveError, Q as i18nNoLocaleFoundInPath, R as PageNumberParamNotFound, T as LocalsReassigned, U as ResponseSentError, W as RewriteWithBodyUsed, a as ClientAddressNotAvailable, b as InvalidGetStaticPathsEntry, g as GetStaticPathsRequired, h as GetStaticPathsInvalidRouteParam, i as CacheNotEnabled, m as GetStaticPathsExpectedParams, n as ActionsReturnedInvalidDataError, p as ForbiddenRewrite, q as StaticClientAddressNotAvailable, r as AstroResponseHeadersReassigned, t as ActionNotFoundError, w as LocalsNotAnObject, x as InvalidGetStaticPathsReturn, z as PrerenderClientAddressNotAvailable } from "./chunks/errors-data_sKwIzwfZ.mjs";
+import { a as fileExtension, b as matchPattern, d as removeLeadingForwardSlash, h as trimSlashes, i as collapseDuplicateTrailingSlashes, l as joinPaths, m as slash, n as collapseDuplicateLeadingSlashes, o as hasFileExtension, p as removeTrailingForwardSlash, r as collapseDuplicateSlashes, s as isInternalPath, t as appendForwardSlash, u as prependForwardSlash } from "./chunks/path_CGJL23ln.mjs";
+import { A as appSymbol, C as isRoute404, D as DEFAULT_404_COMPONENT, E as ASTRO_GENERATOR, F as responseSentSymbol$1, M as fetchStateSymbol, N as originPathnameSymbol, O as REDIRECT_STATUS_CODES, P as pipelineSymbol, T as ASTRO_ERROR_HEADER, a as chunkToString, c as renderSlotToString, d as decodeKey, f as decryptString, i as renderComponent, j as clientAddressSymbol, k as REROUTABLE_STATUS_CODES, l as isRenderTemplateResult, n as renderPage, o as createSlotValueFromString, p as generateCspDigest, r as renderJSX, u as renderTemplate, v as isRenderInstruction, w as isRoute500, x as renderEndpoint, y as isAstroComponentFactory } from "./chunks/server_366Ohdu_.mjs";
 import nodePath from "node:path";
 import "@vercel/routing-utils";
 import colors from "piccolore";
@@ -13,12 +14,12 @@ nodePath.posix.join;
 //#region node_modules/@astrojs/vercel/dist/index.js
 var ASTRO_PATH_HEADER = "x-astro-path";
 var ASTRO_PATH_PARAM = "x_astro_path";
+var ASTRO_PATH_TOKEN_PARAM = "x_astro_path_token";
 var ASTRO_LOCALS_HEADER = "x-astro-locals";
 var ASTRO_MIDDLEWARE_SECRET_HEADER = "x-astro-middleware-secret";
-`${ASTRO_PATH_PARAM}`;
 //#endregion
 //#region \0virtual:astro-vercel:config
-var middlewareSecret = "fd6f396d-64d7-4afe-83d3-c5cb253cae77";
+var middlewareSecret = "c73a4bcb-a2c4-481f-a8fb-295952f7cd4b";
 //#endregion
 //#region node_modules/astro/dist/actions/consts.js
 var ACTION_QUERY_PARAMS = {
@@ -5194,16 +5195,197 @@ var renderers = [];
 			"origin": "project",
 			"_meta": { "trailingSlash": "ignore" }
 		}
+	},
+	{
+		"file": "",
+		"links": [],
+		"scripts": [],
+		"styles": [],
+		"routeData": {
+			"route": "/services/headless-commerce",
+			"isIndex": false,
+			"type": "page",
+			"pattern": "^\\/services\\/headless-commerce\\/?$",
+			"segments": [[{
+				"content": "services",
+				"dynamic": false,
+				"spread": false
+			}], [{
+				"content": "headless-commerce",
+				"dynamic": false,
+				"spread": false
+			}]],
+			"params": [],
+			"component": "src/pages/services/headless-commerce.astro",
+			"pathname": "/services/headless-commerce",
+			"prerender": false,
+			"fallbackRoutes": [],
+			"distURL": [],
+			"origin": "project",
+			"_meta": { "trailingSlash": "ignore" }
+		}
+	},
+	{
+		"file": "",
+		"links": [],
+		"scripts": [],
+		"styles": [],
+		"routeData": {
+			"route": "/services/nextjs-astro-web-apps",
+			"isIndex": false,
+			"type": "page",
+			"pattern": "^\\/services\\/nextjs-astro-web-apps\\/?$",
+			"segments": [[{
+				"content": "services",
+				"dynamic": false,
+				"spread": false
+			}], [{
+				"content": "nextjs-astro-web-apps",
+				"dynamic": false,
+				"spread": false
+			}]],
+			"params": [],
+			"component": "src/pages/services/nextjs-astro-web-apps.astro",
+			"pathname": "/services/nextjs-astro-web-apps",
+			"prerender": false,
+			"fallbackRoutes": [],
+			"distURL": [],
+			"origin": "project",
+			"_meta": { "trailingSlash": "ignore" }
+		}
+	},
+	{
+		"file": "",
+		"links": [],
+		"scripts": [],
+		"styles": [],
+		"routeData": {
+			"route": "/services/shopify-development",
+			"isIndex": false,
+			"type": "page",
+			"pattern": "^\\/services\\/shopify-development\\/?$",
+			"segments": [[{
+				"content": "services",
+				"dynamic": false,
+				"spread": false
+			}], [{
+				"content": "shopify-development",
+				"dynamic": false,
+				"spread": false
+			}]],
+			"params": [],
+			"component": "src/pages/services/shopify-development.astro",
+			"pathname": "/services/shopify-development",
+			"prerender": false,
+			"fallbackRoutes": [],
+			"distURL": [],
+			"origin": "project",
+			"_meta": { "trailingSlash": "ignore" }
+		}
+	},
+	{
+		"file": "",
+		"links": [],
+		"scripts": [],
+		"styles": [],
+		"routeData": {
+			"route": "/services/wix-studio-design",
+			"isIndex": false,
+			"type": "page",
+			"pattern": "^\\/services\\/wix-studio-design\\/?$",
+			"segments": [[{
+				"content": "services",
+				"dynamic": false,
+				"spread": false
+			}], [{
+				"content": "wix-studio-design",
+				"dynamic": false,
+				"spread": false
+			}]],
+			"params": [],
+			"component": "src/pages/services/wix-studio-design.astro",
+			"pathname": "/services/wix-studio-design",
+			"prerender": false,
+			"fallbackRoutes": [],
+			"distURL": [],
+			"origin": "project",
+			"_meta": { "trailingSlash": "ignore" }
+		}
+	},
+	{
+		"file": "",
+		"links": [],
+		"scripts": [],
+		"styles": [],
+		"routeData": {
+			"route": "/services/wordpress-block-themes",
+			"isIndex": false,
+			"type": "page",
+			"pattern": "^\\/services\\/wordpress-block-themes\\/?$",
+			"segments": [[{
+				"content": "services",
+				"dynamic": false,
+				"spread": false
+			}], [{
+				"content": "wordpress-block-themes",
+				"dynamic": false,
+				"spread": false
+			}]],
+			"params": [],
+			"component": "src/pages/services/wordpress-block-themes.astro",
+			"pathname": "/services/wordpress-block-themes",
+			"prerender": false,
+			"fallbackRoutes": [],
+			"distURL": [],
+			"origin": "project",
+			"_meta": { "trailingSlash": "ignore" }
+		}
+	},
+	{
+		"file": "",
+		"links": [],
+		"scripts": [],
+		"styles": [],
+		"routeData": {
+			"route": "/",
+			"isIndex": true,
+			"type": "page",
+			"pattern": "^\\/$",
+			"segments": [],
+			"params": [],
+			"component": "src/pages/index.astro",
+			"pathname": "/",
+			"prerender": false,
+			"fallbackRoutes": [],
+			"distURL": [],
+			"origin": "project",
+			"_meta": { "trailingSlash": "ignore" }
+		}
 	}
 ].map(deserializeRouteInfo);
 //#endregion
 //#region \0virtual:astro:pages
-var _page0 = () => import("./chunks/generic_DIN1bmsG.mjs");
-var _page1 = () => import("./chunks/contact_rBlcq0BM.mjs");
-var pageMap = /* @__PURE__ */ new Map([["node_modules/astro/dist/assets/endpoint/generic.js", _page0], ["src/pages/api/contact.ts", _page1]]);
+var _page0 = () => import("./chunks/generic_DAvbKyB1.mjs");
+var _page1 = () => import("./chunks/contact_Bk3Npn7D.mjs");
+var _page2 = () => import("./chunks/headless-commerce_B149eG4b.mjs");
+var _page3 = () => import("./chunks/nextjs-astro-web-apps_DqKuhsAF.mjs");
+var _page4 = () => import("./chunks/shopify-development_ChVQlHmi.mjs");
+var _page5 = () => import("./chunks/wix-studio-design_DJJSL1xD.mjs");
+var _page6 = () => import("./chunks/wordpress-block-themes_BLhoNqTr.mjs");
+var _page7 = () => import("./chunks/index_TkvXhHz8.mjs");
+var pageMap = /* @__PURE__ */ new Map([
+	["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
+	["src/pages/api/contact.ts", _page1],
+	["src/pages/services/headless-commerce.astro", _page2],
+	["src/pages/services/nextjs-astro-web-apps.astro", _page3],
+	["src/pages/services/shopify-development.astro", _page4],
+	["src/pages/services/wix-studio-design.astro", _page5],
+	["src/pages/services/wordpress-block-themes.astro", _page6],
+	["src/pages/index.astro", _page7]
+]);
 //#endregion
 //#region \0virtual:astro:manifest
-var _manifest = deserializeManifest({"rootDir":"file:///D:/Cinorium/Codivex/web/","cacheDir":"file:///D:/Cinorium/Codivex/web/node_modules/.astro/","outDir":"file:///D:/Cinorium/Codivex/web/dist/","srcDir":"file:///D:/Cinorium/Codivex/web/src/","publicDir":"file:///D:/Cinorium/Codivex/web/public/","buildClientDir":"file:///D:/Cinorium/Codivex/web/dist/client/","buildServerDir":"file:///D:/Cinorium/Codivex/web/dist/server/","adapterName":"@astrojs/vercel","assetsDir":"_astro","routes":[{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"type":"page","component":"_server-islands.astro","params":["name"],"segments":[[{"content":"_server-islands","dynamic":false,"spread":false}],[{"content":"name","dynamic":true,"spread":false}]],"pattern":"^\\/_server-islands\\/([^/]+?)\\/?$","prerender":false,"isIndex":false,"fallbackRoutes":[],"route":"/_server-islands/[name]","origin":"internal","distURL":[],"_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/_image","component":"node_modules/astro/dist/assets/endpoint/generic.js","params":[],"pathname":"/_image","pattern":"^\\/_image\\/?$","segments":[[{"content":"_image","dynamic":false,"spread":false}]],"type":"endpoint","prerender":false,"fallbackRoutes":[],"distURL":[],"isIndex":false,"origin":"internal","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/api/contact","isIndex":false,"type":"endpoint","pattern":"^\\/api\\/contact\\/?$","segments":[[{"content":"api","dynamic":false,"spread":false}],[{"content":"contact","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/api/contact.ts","pathname":"/api/contact","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/services/headless-commerce","isIndex":false,"type":"page","pattern":"^\\/services\\/headless-commerce\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"headless-commerce","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/headless-commerce.astro","pathname":"/services/headless-commerce","prerender":true,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/services/nextjs-astro-web-apps","isIndex":false,"type":"page","pattern":"^\\/services\\/nextjs-astro-web-apps\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"nextjs-astro-web-apps","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/nextjs-astro-web-apps.astro","pathname":"/services/nextjs-astro-web-apps","prerender":true,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/services/shopify-development","isIndex":false,"type":"page","pattern":"^\\/services\\/shopify-development\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"shopify-development","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/shopify-development.astro","pathname":"/services/shopify-development","prerender":true,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/services/wix-studio-design","isIndex":false,"type":"page","pattern":"^\\/services\\/wix-studio-design\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"wix-studio-design","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/wix-studio-design.astro","pathname":"/services/wix-studio-design","prerender":true,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/services/wordpress-block-themes","isIndex":false,"type":"page","pattern":"^\\/services\\/wordpress-block-themes\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"wordpress-block-themes","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/wordpress-block-themes.astro","pathname":"/services/wordpress-block-themes","prerender":true,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/","isIndex":true,"type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","prerender":true,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}}],"serverLike":true,"middlewareMode":"classic","base":"/","trailingSlash":"ignore","compressHTML":"jsx","componentMetadata":[["D:/Cinorium/Codivex/web/src/pages/index.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/headless-commerce.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/nextjs-astro-web-apps.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/shopify-development.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/wix-studio-design.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/wordpress-block-themes.astro",{"propagation":"none","containsHead":true}]],"renderers":[],"clientDirectives":[["idle","(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value==\"object\"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};\"requestIdleCallback\"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event(\"astro:idle\"));})();"],["load","(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event(\"astro:load\"));})();"],["media","(()=>{var n=(a,t)=>{let i=async()=>{await(await a())()};if(t.value){let e=matchMedia(t.value);e.matches?i():e.addEventListener(\"change\",i,{once:!0})}};(self.Astro||(self.Astro={})).media=n;window.dispatchEvent(new Event(\"astro:media\"));})();"],["only","(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event(\"astro:only\"));})();"],["visible","(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value==\"object\"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event(\"astro:visible\"));})();"]],"entryModules":{"astro/entrypoints/prerender":"prerender-entry.Cjk0qNpB.mjs","\u0000noop-middleware":"virtual_astro_middleware.mjs","\u0000virtual:astro:server-island-manifest":"chunks/_virtual_astro_server-island-manifest_C1Q2srgE.mjs","\u0000virtual:astro:session-driver":"chunks/_virtual_astro_session-driver_C-PI1Pas.mjs","\u0000virtual:astro:page:src/pages/services/headless-commerce@_@astro":"chunks/headless-commerce_CtMXDmBG.mjs","\u0000virtual:astro:page:src/pages/index@_@astro":"chunks/index_BHH7NvTU.mjs","\u0000virtual:astro:page:src/pages/services/nextjs-astro-web-apps@_@astro":"chunks/nextjs-astro-web-apps_B_xMh7RK.mjs","\u0000virtual:astro:actions/noop-entrypoint":"chunks/noop-entrypoint_Z3zFhrGC.mjs","\u0000virtual:astro:page:src/pages/services/shopify-development@_@astro":"chunks/shopify-development_BC-B_hcK.mjs","\u0000virtual:astro:page:src/pages/services/wix-studio-design@_@astro":"chunks/wix-studio-design_BhHEidm7.mjs","\u0000virtual:astro:page:src/pages/services/wordpress-block-themes@_@astro":"chunks/wordpress-block-themes_B_CQviXa.mjs","@astrojs/vercel/entrypoint":"entry.mjs","\u0000virtual:astro:page:src/pages/api/contact@_@ts":"chunks/contact_rBlcq0BM.mjs","\u0000virtual:astro:page:node_modules/astro/dist/assets/endpoint/generic@_@js":"chunks/generic_DIN1bmsG.mjs","D:/Cinorium/Codivex/web/node_modules/astro/dist/assets/services/sharp.js":"chunks/sharp_CDoBJrzf.mjs","D:/Cinorium/Codivex/web/src/components/Header.astro?astro&type=script&index=0&lang.ts":"_astro/Header.astro_astro_type_script_index_0_lang.d1Pm5Ryb.js","D:/Cinorium/Codivex/web/src/pages/index.astro?astro&type=script&index=0&lang.ts":"_astro/index.astro_astro_type_script_index_0_lang.gBYGeGAZ.js","astro:scripts/before-hydration.js":""},"inlinedScripts":[["D:/Cinorium/Codivex/web/src/components/Header.astro?astro&type=script&index=0&lang.ts","var e=document.getElementById(`main-header`);window.addEventListener(`scroll`,()=>{window.scrollY>20?(e?.classList.add(`shadow-xl`,`bg-surface/90`),e?.classList.remove(`bg-surface/75`)):(e?.classList.remove(`shadow-xl`,`bg-surface/90`),e?.classList.add(`bg-surface/75`))});var t=document.getElementById(`mobile-menu-toggle`),n=document.getElementById(`mobile-drawer`),r=document.querySelectorAll(`.mobile-bar`);t&&n&&(t.addEventListener(`click`,()=>{let e=t.getAttribute(`aria-expanded`)===`true`;t.setAttribute(`aria-expanded`,String(!e)),e?(n.classList.add(`translate-x-full`),r[0].classList.remove(`rotate-45`,`translate-y-2`),r[1].classList.remove(`opacity-0`),r[2].classList.remove(`-rotate-45`,`-translate-y-2`),document.body.style.overflow=``):(n.classList.remove(`translate-x-full`),r[0].classList.add(`rotate-45`,`translate-y-2`),r[1].classList.add(`opacity-0`),r[2].classList.add(`-rotate-45`,`-translate-y-2`),document.body.style.overflow=`hidden`)}),[`mobile-link-cases`,`mobile-link-contact`].forEach(e=>{document.getElementById(e)?.addEventListener(`click`,()=>{n.classList.add(`translate-x-full`),r[0].classList.remove(`rotate-45`,`translate-y-2`),r[1].classList.remove(`opacity-0`),r[2].classList.remove(`-rotate-45`,`-translate-y-2`),t.setAttribute(`aria-expanded`,`false`),document.body.style.overflow=``})}));var i=(e,t)=>{let n=document.getElementById(e),r=document.getElementById(t);n&&r&&n.addEventListener(`click`,()=>{let e=n.querySelector(`svg`);r.classList.contains(`hidden`)?(r.classList.remove(`hidden`),r.classList.add(`flex`),e?.classList.add(`rotate-180`)):(r.classList.remove(`flex`),r.classList.add(`hidden`),e?.classList.remove(`rotate-180`))})};i(`mobile-accordion-1`,`mobile-panel-1`),i(`mobile-accordion-2`,`mobile-panel-2`),document.querySelectorAll(`.dropdown-container`).forEach(e=>{let t=e.querySelector(`button`);e.querySelectorAll(`a`),t&&(t.addEventListener(`click`,e=>{e.stopPropagation();let n=t.getAttribute(`aria-expanded`)===`true`;t.setAttribute(`aria-expanded`,String(!n))}),window.addEventListener(`click`,()=>{t.setAttribute(`aria-expanded`,`false`)}),e.addEventListener(`keydown`,e=>{e.key===`Escape`&&(t.setAttribute(`aria-expanded`,`false`),t.focus())}))});"],["D:/Cinorium/Codivex/web/src/pages/index.astro?astro&type=script&index=0&lang.ts","var e=document.querySelectorAll(`.choice-btn`);e.forEach(e=>{e.addEventListener(`click`,t=>{t.preventDefault();let n=e.getAttribute(`data-type`),r=e.getAttribute(`data-value`),i=document.getElementById(`${n}-input`);i&&(i.value=r||``),document.querySelectorAll(`.choice-btn[data-type=\"${n}\"]`).forEach(e=>{e.classList.remove(`bg-primary-maroon/20`,`border-primary-accent`,`text-white`,`shadow-[0_0_15px_rgba(255,179,181,0.15)]`),e.classList.add(`bg-surface-container-low`,`border-outline-ghost`,`text-secondary-silver`)}),e.classList.remove(`bg-surface-container-low`,`border-outline-ghost`,`text-secondary-silver`),e.classList.add(`bg-primary-maroon/20`,`border-primary-accent`,`text-white`,`shadow-[0_0_15px_rgba(255,179,181,0.15)]`)})});var t=document.getElementById(`strategy-form`),n=document.getElementById(`success-overlay`);t&&n&&t.addEventListener(`submit`,r=>{r.preventDefault(),n.classList.remove(`pointer-events-none`,`opacity-0`),n.classList.add(`opacity-100`),t.reset(),e.forEach(e=>{e.classList.remove(`bg-primary-maroon/20`,`border-primary-accent`,`text-white`,`shadow-[0_0_15px_rgba(255,179,181,0.15)]`),e.classList.add(`bg-surface-container-low`,`border-outline-ghost`,`text-secondary-silver`)})});"]],"assets":["/favicon.ico","/favicon.svg","/_astro/Layout.BUtfyOJZ.css","/services/headless-commerce/index.html","/services/nextjs-astro-web-apps/index.html","/services/shopify-development/index.html","/services/wix-studio-design/index.html","/services/wordpress-block-themes/index.html","/index.html"],"buildFormat":"directory","checkOrigin":true,"actionBodySizeLimit":1048576,"serverIslandBodySizeLimit":1048576,"allowedDomains":[],"key":"QgppDjmB6vXTxmwYVA87sfuZnAuXX4GXLvapr6iFxSY=","image":{},"devToolbar":{"enabled":false,"debugInfoOutput":""},"logLevel":"info","shouldInjectCspMetaTags":false});
+var _manifest = deserializeManifest({"rootDir":"file:///D:/Cinorium/Codivex/web/","cacheDir":"file:///D:/Cinorium/Codivex/web/node_modules/.astro/","outDir":"file:///D:/Cinorium/Codivex/web/dist/","srcDir":"file:///D:/Cinorium/Codivex/web/src/","publicDir":"file:///D:/Cinorium/Codivex/web/public/","buildClientDir":"file:///D:/Cinorium/Codivex/web/dist/client/","buildServerDir":"file:///D:/Cinorium/Codivex/web/dist/server/","adapterName":"@astrojs/vercel","assetsDir":"_astro","routes":[{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"type":"page","component":"_server-islands.astro","params":["name"],"segments":[[{"content":"_server-islands","dynamic":false,"spread":false}],[{"content":"name","dynamic":true,"spread":false}]],"pattern":"^\\/_server-islands\\/([^/]+?)\\/?$","prerender":false,"isIndex":false,"fallbackRoutes":[],"route":"/_server-islands/[name]","origin":"internal","distURL":[],"_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/_image","component":"node_modules/astro/dist/assets/endpoint/generic.js","params":[],"pathname":"/_image","pattern":"^\\/_image\\/?$","segments":[[{"content":"_image","dynamic":false,"spread":false}]],"type":"endpoint","prerender":false,"fallbackRoutes":[],"distURL":[],"isIndex":false,"origin":"internal","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[],"routeData":{"route":"/api/contact","isIndex":false,"type":"endpoint","pattern":"^\\/api\\/contact\\/?$","segments":[[{"content":"api","dynamic":false,"spread":false}],[{"content":"contact","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/api/contact.ts","pathname":"/api/contact","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[{"type":"external","src":"_astro/Layout.DAmSrtqr.css"}],"routeData":{"route":"/services/headless-commerce","isIndex":false,"type":"page","pattern":"^\\/services\\/headless-commerce\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"headless-commerce","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/headless-commerce.astro","pathname":"/services/headless-commerce","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[{"type":"external","src":"_astro/Layout.DAmSrtqr.css"}],"routeData":{"route":"/services/nextjs-astro-web-apps","isIndex":false,"type":"page","pattern":"^\\/services\\/nextjs-astro-web-apps\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"nextjs-astro-web-apps","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/nextjs-astro-web-apps.astro","pathname":"/services/nextjs-astro-web-apps","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[{"type":"external","src":"_astro/Layout.DAmSrtqr.css"}],"routeData":{"route":"/services/shopify-development","isIndex":false,"type":"page","pattern":"^\\/services\\/shopify-development\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"shopify-development","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/shopify-development.astro","pathname":"/services/shopify-development","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[{"type":"external","src":"_astro/Layout.DAmSrtqr.css"}],"routeData":{"route":"/services/wix-studio-design","isIndex":false,"type":"page","pattern":"^\\/services\\/wix-studio-design\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"wix-studio-design","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/wix-studio-design.astro","pathname":"/services/wix-studio-design","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[{"type":"external","src":"_astro/Layout.DAmSrtqr.css"}],"routeData":{"route":"/services/wordpress-block-themes","isIndex":false,"type":"page","pattern":"^\\/services\\/wordpress-block-themes\\/?$","segments":[[{"content":"services","dynamic":false,"spread":false}],[{"content":"wordpress-block-themes","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/services/wordpress-block-themes.astro","pathname":"/services/wordpress-block-themes","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"styles":[{"type":"external","src":"_astro/Layout.DAmSrtqr.css"}],"routeData":{"route":"/","isIndex":true,"type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","prerender":false,"fallbackRoutes":[],"distURL":[],"origin":"project","_meta":{"trailingSlash":"ignore"}}}],"serverLike":true,"middlewareMode":"classic","base":"/","trailingSlash":"ignore","compressHTML":"jsx","componentMetadata":[["D:/Cinorium/Codivex/web/src/pages/index.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/headless-commerce.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/nextjs-astro-web-apps.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/shopify-development.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/wix-studio-design.astro",{"propagation":"none","containsHead":true}],["D:/Cinorium/Codivex/web/src/pages/services/wordpress-block-themes.astro",{"propagation":"none","containsHead":true}]],"renderers":[],"clientDirectives":[["idle","(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value==\"object\"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};\"requestIdleCallback\"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event(\"astro:idle\"));})();"],["load","(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event(\"astro:load\"));})();"],["media","(()=>{var n=(a,t)=>{let i=async()=>{await(await a())()};if(t.value){let e=matchMedia(t.value);e.matches?i():e.addEventListener(\"change\",i,{once:!0})}};(self.Astro||(self.Astro={})).media=n;window.dispatchEvent(new Event(\"astro:media\"));})();"],["only","(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event(\"astro:only\"));})();"],["visible","(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value==\"object\"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event(\"astro:visible\"));})();"]],"entryModules":{"astro/entrypoints/prerender":"prerender-entry.BkhSM-bW.mjs","\u0000noop-middleware":"virtual_astro_middleware.mjs","\u0000virtual:astro:server-island-manifest":"chunks/_virtual_astro_server-island-manifest_C1Q2srgE.mjs","\u0000virtual:astro:session-driver":"chunks/_virtual_astro_session-driver_C-PI1Pas.mjs","\u0000virtual:astro:actions/noop-entrypoint":"chunks/noop-entrypoint_Z3zFhrGC.mjs","@astrojs/vercel/entrypoint":"entry.mjs","\u0000virtual:astro:page:src/pages/api/contact@_@ts":"chunks/contact_Bk3Npn7D.mjs","\u0000virtual:astro:page:node_modules/astro/dist/assets/endpoint/generic@_@js":"chunks/generic_DAvbKyB1.mjs","\u0000virtual:astro:page:src/pages/services/headless-commerce@_@astro":"chunks/headless-commerce_B149eG4b.mjs","\u0000virtual:astro:page:src/pages/index@_@astro":"chunks/index_TkvXhHz8.mjs","\u0000virtual:astro:page:src/pages/services/nextjs-astro-web-apps@_@astro":"chunks/nextjs-astro-web-apps_DqKuhsAF.mjs","D:/Cinorium/Codivex/web/node_modules/astro/dist/assets/services/sharp.js":"chunks/sharp_DObHJDIj.mjs","\u0000virtual:astro:page:src/pages/services/shopify-development@_@astro":"chunks/shopify-development_ChVQlHmi.mjs","\u0000virtual:astro:page:src/pages/services/wix-studio-design@_@astro":"chunks/wix-studio-design_DJJSL1xD.mjs","\u0000virtual:astro:page:src/pages/services/wordpress-block-themes@_@astro":"chunks/wordpress-block-themes_BLhoNqTr.mjs","D:/Cinorium/Codivex/web/src/components/Header.astro?astro&type=script&index=0&lang.ts":"_astro/Header.astro_astro_type_script_index_0_lang.d1Pm5Ryb.js","D:/Cinorium/Codivex/web/src/pages/index.astro?astro&type=script&index=0&lang.ts":"_astro/index.astro_astro_type_script_index_0_lang.Ej3C7yr5.js","astro:scripts/before-hydration.js":""},"inlinedScripts":[["D:/Cinorium/Codivex/web/src/components/Header.astro?astro&type=script&index=0&lang.ts","var e=document.getElementById(`main-header`);window.addEventListener(`scroll`,()=>{window.scrollY>20?(e?.classList.add(`shadow-xl`,`bg-surface/90`),e?.classList.remove(`bg-surface/75`)):(e?.classList.remove(`shadow-xl`,`bg-surface/90`),e?.classList.add(`bg-surface/75`))});var t=document.getElementById(`mobile-menu-toggle`),n=document.getElementById(`mobile-drawer`),r=document.querySelectorAll(`.mobile-bar`);t&&n&&(t.addEventListener(`click`,()=>{let e=t.getAttribute(`aria-expanded`)===`true`;t.setAttribute(`aria-expanded`,String(!e)),e?(n.classList.add(`translate-x-full`),r[0].classList.remove(`rotate-45`,`translate-y-2`),r[1].classList.remove(`opacity-0`),r[2].classList.remove(`-rotate-45`,`-translate-y-2`),document.body.style.overflow=``):(n.classList.remove(`translate-x-full`),r[0].classList.add(`rotate-45`,`translate-y-2`),r[1].classList.add(`opacity-0`),r[2].classList.add(`-rotate-45`,`-translate-y-2`),document.body.style.overflow=`hidden`)}),[`mobile-link-cases`,`mobile-link-contact`].forEach(e=>{document.getElementById(e)?.addEventListener(`click`,()=>{n.classList.add(`translate-x-full`),r[0].classList.remove(`rotate-45`,`translate-y-2`),r[1].classList.remove(`opacity-0`),r[2].classList.remove(`-rotate-45`,`-translate-y-2`),t.setAttribute(`aria-expanded`,`false`),document.body.style.overflow=``})}));var i=(e,t)=>{let n=document.getElementById(e),r=document.getElementById(t);n&&r&&n.addEventListener(`click`,()=>{let e=n.querySelector(`svg`);r.classList.contains(`hidden`)?(r.classList.remove(`hidden`),r.classList.add(`flex`),e?.classList.add(`rotate-180`)):(r.classList.remove(`flex`),r.classList.add(`hidden`),e?.classList.remove(`rotate-180`))})};i(`mobile-accordion-1`,`mobile-panel-1`),i(`mobile-accordion-2`,`mobile-panel-2`),document.querySelectorAll(`.dropdown-container`).forEach(e=>{let t=e.querySelector(`button`);e.querySelectorAll(`a`),t&&(t.addEventListener(`click`,e=>{e.stopPropagation();let n=t.getAttribute(`aria-expanded`)===`true`;t.setAttribute(`aria-expanded`,String(!n))}),window.addEventListener(`click`,()=>{t.setAttribute(`aria-expanded`,`false`)}),e.addEventListener(`keydown`,e=>{e.key===`Escape`&&(t.setAttribute(`aria-expanded`,`false`),t.focus())}))});"],["D:/Cinorium/Codivex/web/src/pages/index.astro?astro&type=script&index=0&lang.ts","var e=document.querySelectorAll(`.choice-btn`);e.forEach(e=>{e.addEventListener(`click`,t=>{t.preventDefault();let n=e.getAttribute(`data-type`),r=e.getAttribute(`data-value`),i=document.getElementById(`${n}-input`);i&&(i.value=r||``),document.querySelectorAll(`.choice-btn[data-type=\"${n}\"]`).forEach(e=>{e.classList.remove(`bg-primary-maroon/20`,`border-primary-accent`,`text-white`,`shadow-[0_0_15px_rgba(255,179,181,0.15)]`),e.classList.add(`bg-surface-container-low`,`border-outline-ghost`,`text-secondary-silver`)}),e.classList.remove(`bg-surface-container-low`,`border-outline-ghost`,`text-secondary-silver`),e.classList.add(`bg-primary-maroon/20`,`border-primary-accent`,`text-white`,`shadow-[0_0_15px_rgba(255,179,181,0.15)]`)})});var t=document.getElementById(`strategy-form`),n=document.getElementById(`success-overlay`),r=t?.querySelector(`button[type=\"submit\"]`);t&&n&&t.addEventListener(`submit`,async i=>{i.preventDefault();let a=new FormData(t),o=document.getElementById(`goal-input`),s=document.getElementById(`platform-input`);o&&a.set(`goal`,o.value),s&&a.set(`platform`,s.value),r&&(r.disabled=!0,r.textContent=`Sending…`);try{let r=await(await fetch(`/api/contact`,{method:`POST`,body:a})).json();r.success?(n.classList.remove(`pointer-events-none`,`opacity-0`),n.classList.add(`opacity-100`),t.reset(),e.forEach(e=>{e.classList.remove(`bg-primary-maroon/20`,`border-primary-accent`,`text-white`,`shadow-[0_0_15px_rgba(255,179,181,0.15)]`),e.classList.add(`bg-surface-container-low`,`border-outline-ghost`,`text-secondary-silver`)})):(console.error(`Contact API error:`,r),alert(`Something went wrong. Please try messaging us on WhatsApp.`))}catch(e){console.error(`Submission error:`,e),alert(`Network error. Please try messaging us on WhatsApp.`)}finally{r&&(r.disabled=!1,r.textContent=`Submit Strategy Request`)}});"]],"assets":["/favicon.ico","/favicon.svg","/_astro/Layout.DAmSrtqr.css"],"buildFormat":"directory","checkOrigin":true,"actionBodySizeLimit":1048576,"serverIslandBodySizeLimit":1048576,"allowedDomains":[],"key":"+7lkNZPAgIQ+hasb6+vVRVWmiw9SbfOEfj06FzjdcpE=","image":{},"devToolbar":{"enabled":false,"debugInfoOutput":""},"logLevel":"info","shouldInjectCspMetaTags":false});
 var manifestRoutes = _manifest.routes;
 var manifest = Object.assign(_manifest, {
 	renderers,
@@ -5246,9 +5428,11 @@ var entrypoint_default = { async fetch(request) {
 	const hasValidMiddlewareSecret = request.headers.get(ASTRO_MIDDLEWARE_SECRET_HEADER) === middlewareSecret;
 	let realPath = void 0;
 	if (hasValidMiddlewareSecret) realPath = request.headers.get(ASTRO_PATH_HEADER);
-	else if (request.headers.get("x-vercel-isr") === "1") realPath = url.searchParams.get(ASTRO_PATH_PARAM);
+	else if (url.searchParams.get("x_astro_path_token") === "c73a4bcb-a2c4-481f-a8fb-295952f7cd4b") realPath = url.searchParams.get(ASTRO_PATH_PARAM);
 	if (typeof realPath === "string") {
 		url.pathname = realPath;
+		url.searchParams.delete(ASTRO_PATH_PARAM);
+		url.searchParams.delete(ASTRO_PATH_TOKEN_PARAM);
 		request = new Request(url.toString(), {
 			method: request.method,
 			headers: request.headers,

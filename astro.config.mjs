@@ -8,6 +8,9 @@ export default defineConfig({
   output: 'server',
   adapter: vercel(),
   vite: {
+    ssr: {
+      external: ['nodemailer'],
+    },
     plugins: [tailwindcss()],
   },
 });

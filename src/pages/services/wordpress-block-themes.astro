@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="WordPress Block Themes & Content Hubs" 
-  description="High-performance WordPress development. Custom Gutenberg React blocks, Full Site Editing (FSE) block themes, and WooCommerce configurations engineered for media publishers."
+  title="WordPress Block Themes & Gutenberg Development"
+  description="Build modern WordPress block themes, custom Gutenberg blocks, and WooCommerce experiences with a flexible, content-first approach."
+  keywords="wordpress block theme, gutenberg blocks, wordpress development agency, woocommerce development"
 >
   <section class="relative pt-36 pb-20 overflow-hidden bg-surface">
     <!-- Backlights -->
@@ -143,4 +144,103 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <section class="py-24 md:py-28 bg-surface border-t border-outline-ghost/30">
+    <div class="max-w-[1100px] mx-auto px-4 md:px-8">
+      <div class="text-center mb-12 max-w-[760px] mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-[10px] font-bold text-primary-accent tracking-[0.16em] uppercase mb-5">
+          WordPress FAQs
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-5">
+          WordPress Block Theme Questions Answered
+        </h2>
+        <p class="text-base md:text-lg text-secondary-silver leading-relaxed">
+          These FAQs focus on WordPress block themes, Gutenberg, WooCommerce, and custom development for content-rich organizations.
+        </p>
+      </div>
+
+      <div class="grid gap-4">
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7" open>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">What is a WordPress block theme?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            A block theme uses WordPress's native block editor and Full Site Editing system to create a more flexible, modern editing experience without relying on heavy page builders.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can you build custom Gutenberg blocks for WordPress?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes. We build custom blocks and editor experiences that fit your content patterns and brand system while keeping the backend intuitive for non-technical editors.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Is WordPress still a strong choice for ecommerce?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes, especially when you want a highly flexible content platform with strong ecommerce capabilities through WooCommerce and custom business logic around checkout and inventory.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can WordPress be used in a headless setup?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Absolutely. WordPress can serve as the content backend while a custom frontend uses REST API or WPGraphQL to render a faster, more modern experience.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a WordPress block theme?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A block theme uses WordPress's native block editor and Full Site Editing system to create a more flexible, modern editing experience without relying on heavy page builders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you build custom Gutenberg blocks for WordPress?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build custom blocks and editor experiences that fit your content patterns and brand system while keeping the backend intuitive for non-technical editors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is WordPress still a strong choice for ecommerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, especially when you want a highly flexible content platform with strong ecommerce capabilities through WooCommerce and custom business logic around checkout and inventory."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can WordPress be used in a headless setup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. WordPress can serve as the content backend while a custom frontend uses REST API or WPGraphQL to render a faster, more modern experience."
+        }
+      }
+    ]
+  }
+</script>

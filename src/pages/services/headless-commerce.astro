@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="Custom Headless Commerce Engineering" 
-  description="Decouple your storefront. Combine Astro, Next.js, and React with backend commerce giants like Shopify Hydrogen and Wix Headless APIs for sub-second loading."
+  title="Headless Commerce Development"
+  description="Build a faster, more flexible commerce experience with headless Shopify, Astro, Next.js, and API-driven integrations that improve speed, scalability, and conversion."
+  keywords="headless commerce, commerce architecture, astro nextjs ecommerce, shopify hydrogen, wix headless"
 >
   <section class="relative pt-36 pb-20 overflow-hidden bg-surface">
     <!-- Backlights -->
@@ -143,4 +144,103 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <section class="py-24 md:py-28 bg-surface border-t border-outline-ghost/30">
+    <div class="max-w-[1100px] mx-auto px-4 md:px-8">
+      <div class="text-center mb-12 max-w-[760px] mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-[10px] font-bold text-primary-accent tracking-[0.16em] uppercase mb-5">
+          Headless FAQs
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-5">
+          Headless Commerce Questions Answered
+        </h2>
+        <p class="text-base md:text-lg text-secondary-silver leading-relaxed">
+          These FAQs address common search intent around decoupled architecture, migration, performance, and API-driven commerce experiences.
+        </p>
+      </div>
+
+      <div class="grid gap-4">
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7" open>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">What is headless commerce and why do brands use it?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Headless commerce separates the storefront experience from the commerce backend so brands can deliver faster, more flexible experiences while integrating with modern APIs and custom frontend frameworks.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Is headless commerce better for performance and SEO?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            In many cases, yes. A decoupled frontend can be optimized for edge delivery, faster rendering, and stronger Core Web Vitals, which directly improves both user experience and search visibility.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can you migrate from a monolithic ecommerce setup to headless?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes. We design phased migration strategies that preserve existing data, minimize risk, and gradually transition the storefront to a modern headless architecture without unnecessary downtime.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Which frameworks are best for headless storefronts?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Astro and Next.js are common choices depending on the project goals. Astro is excellent for static, high-speed content-heavy storefronts, while Next.js supports richer app-like product experiences and dynamic rendering needs.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is headless commerce and why do brands use it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Headless commerce separates the storefront experience from the commerce backend so brands can deliver faster, more flexible experiences while integrating with modern APIs and custom frontend frameworks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is headless commerce better for performance and SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In many cases, yes. A decoupled frontend can be optimized for edge delivery, faster rendering, and stronger Core Web Vitals, which directly improves both user experience and search visibility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you migrate from a monolithic ecommerce setup to headless?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We design phased migration strategies that preserve existing data, minimize risk, and gradually transition the storefront to a modern headless architecture without unnecessary downtime."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which frameworks are best for headless storefronts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Astro and Next.js are common choices depending on the project goals. Astro is excellent for static, high-speed content-heavy storefronts, while Next.js supports richer app-like product experiences and dynamic rendering needs."
+        }
+      }
+    ]
+  }
+</script>

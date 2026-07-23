@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="Next.js & Astro Web Applications" 
-  description="High-performance custom web applications built using Next.js, Astro, React, and Tailwind CSS. Edge-optimized delivery with sub-second page loads."
+  title="Next.js & Astro Development"
+  description="Launch fast, scalable custom web apps with Next.js, Astro, React, and edge performance optimization for growth-stage brands and enterprise teams."
+  keywords="nextjs development, astro development, custom web app development, react development agency"
 >
   <section class="relative pt-36 pb-20 overflow-hidden bg-surface">
     <!-- Backlights -->
@@ -143,4 +144,103 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <section class="py-24 md:py-28 bg-surface border-t border-outline-ghost/30">
+    <div class="max-w-[1100px] mx-auto px-4 md:px-8">
+      <div class="text-center mb-12 max-w-[760px] mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-[10px] font-bold text-primary-accent tracking-[0.16em] uppercase mb-5">
+          Custom Web App FAQs
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-5">
+          Questions About Custom Next.js & Astro Development
+        </h2>
+        <p class="text-base md:text-lg text-secondary-silver leading-relaxed">
+          These FAQs cover performance, framework choice, CMS integration, and the value of custom web app engineering for modern brands.
+        </p>
+      </div>
+
+      <div class="grid gap-4">
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7" open>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">What is the difference between Next.js and Astro?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Next.js is often preferred for highly interactive applications with dynamic rendering needs, while Astro is ideal for content-heavy sites that need exceptional performance and minimal JavaScript overhead.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can you build a custom web app for my business instead of using a template?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes. We build custom frontends, APIs, and data layers tailored to your operations, user journeys, and long-term scaling goals rather than forcing your business into a generic template.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">How do custom web apps improve speed and reliability?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Custom builds allow us to remove unnecessary features, optimize delivery paths, and structure data and rendering in a way that improves performance, maintainability, and resilience.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can you connect a custom app to WordPress, Shopify, or a CRM?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes. We frequently connect custom frontends to content systems, ecommerce platforms, and CRM tools through API layers, webhooks, and secure data pipelines.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between Next.js and Astro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Next.js is often preferred for highly interactive applications with dynamic rendering needs, while Astro is ideal for content-heavy sites that need exceptional performance and minimal JavaScript overhead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you build a custom web app for my business instead of using a template?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build custom frontends, APIs, and data layers tailored to your operations, user journeys, and long-term scaling goals rather than forcing your business into a generic template."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do custom web apps improve speed and reliability?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Custom builds allow us to remove unnecessary features, optimize delivery paths, and structure data and rendering in a way that improves performance, maintainability, and resilience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you connect a custom app to WordPress, Shopify, or a CRM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We frequently connect custom frontends to content systems, ecommerce platforms, and CRM tools through API layers, webhooks, and secure data pipelines."
+        }
+      }
+    ]
+  }
+</script>

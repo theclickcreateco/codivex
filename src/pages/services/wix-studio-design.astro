@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="Wix Studio Design & Visual Accelerator" 
-  description="High-end interactive websites built in Wix Studio. Fluid typography, responsive grids, interactive animations, Velo API scripting, and Zero server overhead."
+  title="Wix Studio Development Agency"
+  description="Create polished Wix Studio websites with fluid design, custom Velo logic, and low-maintenance infrastructure for service brands and fast-moving teams."
+  keywords="wix studio development, wix studio agency, velo development, wix website design"
 >
   <section class="relative pt-36 pb-20 overflow-hidden bg-surface">
     <!-- Backlights -->
@@ -143,4 +144,103 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <section class="py-24 md:py-28 bg-surface border-t border-outline-ghost/30">
+    <div class="max-w-[1100px] mx-auto px-4 md:px-8">
+      <div class="text-center mb-12 max-w-[760px] mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-[10px] font-bold text-primary-accent tracking-[0.16em] uppercase mb-5">
+          Wix FAQs
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-5">
+          Wix Studio Questions Answered
+        </h2>
+        <p class="text-base md:text-lg text-secondary-silver leading-relaxed">
+          These FAQs cover Wix Studio builds, migration, Velo scripting, and the benefits of a no-maintenance visual platform.
+        </p>
+      </div>
+
+      <div class="grid gap-4">
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7" open>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">What is Wix Studio used for?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Wix Studio is often used for visually rich websites, service-based brands, launch campaigns, and teams that need a polished experience without a traditional development-heavy maintenance load.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can you migrate a site into Wix Studio from another platform?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes. We can help restructure content, rebuild layouts, and preserve essential SEO and user journey elements when migrating into Wix Studio.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">What is Velo and when is it useful?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Velo is Wix's scripting layer that allows custom logic, database interactions, bookings flows, and dynamic website behavior beyond standard builder capabilities.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Is Wix Studio a good option for startups and service companies?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            It is often an excellent fit when speed, visual polish, and simple ongoing maintenance matter more than building a large custom software platform from scratch.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Wix Studio used for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wix Studio is often used for visually rich websites, service-based brands, launch campaigns, and teams that need a polished experience without a traditional development-heavy maintenance load."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you migrate a site into Wix Studio from another platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We can help restructure content, rebuild layouts, and preserve essential SEO and user journey elements when migrating into Wix Studio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Velo and when is it useful?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Velo is Wix's scripting layer that allows custom logic, database interactions, bookings flows, and dynamic website behavior beyond standard builder capabilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Wix Studio a good option for startups and service companies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is often an excellent fit when speed, visual polish, and simple ongoing maintenance matter more than building a large custom software platform from scratch."
+        }
+      }
+    ]
+  }
+</script>

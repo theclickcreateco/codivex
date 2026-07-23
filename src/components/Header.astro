@@ -21,6 +21,7 @@
       <!-- Dropdown: E-Commerce Engine -->
       <div class="relative group dropdown-container">
         <button 
+          type="button"
           class="flex items-center gap-1.5 py-2 text-sm font-medium text-secondary-silver hover:text-primary-accent transition-colors cursor-pointer focus:outline-none" 
           aria-expanded="false" 
           aria-haspopup="true"
@@ -30,7 +31,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 rounded-md border border-outline-ghost/40 bg-surface-container-high p-2 shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 focus-within:opacity-100 focus-within:translate-y-0 focus-within:pointer-events-auto">
+        <div class="dropdown-menu absolute left-0 mt-2 w-64 rounded-md border border-outline-ghost/40 bg-surface-container-high p-2 shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 focus-within:opacity-100 focus-within:translate-y-0 focus-within:pointer-events-auto">
           <a 
             href="/services/shopify-development" 
             class="flex flex-col gap-0.5 rounded-default p-3 hover:bg-surface-container-highest transition-colors group/item"
@@ -58,6 +59,7 @@
       <!-- Dropdown: Content & Marketing Hubs -->
       <div class="relative group dropdown-container">
         <button 
+          type="button"
           class="flex items-center gap-1.5 py-2 text-sm font-medium text-secondary-silver hover:text-primary-accent transition-colors cursor-pointer focus:outline-none" 
           aria-expanded="false" 
           aria-haspopup="true"
@@ -67,7 +69,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 rounded-md border border-outline-ghost/40 bg-surface-container-high p-2 shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 focus-within:opacity-100 focus-within:translate-y-0 focus-within:pointer-events-auto">
+        <div class="dropdown-menu absolute left-0 mt-2 w-64 rounded-md border border-outline-ghost/40 bg-surface-container-high p-2 shadow-2xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 focus-within:opacity-100 focus-within:translate-y-0 focus-within:pointer-events-auto">
           <a 
             href="/services/wordpress-block-themes" 
             class="flex flex-col gap-0.5 rounded-default p-3 hover:bg-surface-container-highest transition-colors group/item"
@@ -265,29 +267,85 @@
   setupAccordion('mobile-accordion-1', 'mobile-panel-1');
   setupAccordion('mobile-accordion-2', 'mobile-panel-2');
 
-  // Accessible Keyboard Dropdowns for Desktop
+  // Reliable dropdown behavior for desktop navigation
   const dropdownContainers = document.querySelectorAll('.dropdown-container');
+  const closeTimers = new WeakMap<HTMLElement, number>();
+
+  const openDropdown = (container: HTMLElement, btn: HTMLButtonElement, menu: HTMLElement) => {
+    clearTimeout(closeTimers.get(container));
+    container.classList.add('is-open');
+    btn.setAttribute('aria-expanded', 'true');
+    menu.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+    menu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+  };
+
+  const closeDropdown = (container: HTMLElement, btn: HTMLButtonElement, menu: HTMLElement, delay = 140) => {
+    clearTimeout(closeTimers.get(container));
+    const timer = window.setTimeout(() => {
+      container.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+      menu.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+      menu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+    }, delay);
+    closeTimers.set(container, timer);
+  };
+
   dropdownContainers.forEach(container => {
     const btn = container.querySelector('button');
-    const links = container.querySelectorAll('a');
-    
-    if (btn) {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-      });
-      
-      // Close when clicking outside
-      window.addEventListener('click', () => {
-        btn.setAttribute('aria-expanded', 'false');
-      });
+    const menu = container.querySelector('.dropdown-menu');
 
-      // Escape key to close
-      container.addEventListener('keydown', (e: KeyboardEvent) => {
-        if (e.key === 'Escape') {
-          btn.setAttribute('aria-expanded', 'false');
-          btn.focus();
+    if (!btn || !(menu instanceof HTMLElement)) {
+      return;
+    }
+
+    const open = () => openDropdown(container as HTMLElement, btn as HTMLButtonElement, menu);
+    const close = (delay = 140) => closeDropdown(container as HTMLElement, btn as HTMLButtonElement, menu, delay);
+
+    container.addEventListener('mouseenter', open);
+    container.addEventListener('mouseleave', () => close());
+    container.addEventListener('focusin', open);
+    container.addEventListener('focusout', (e: FocusEvent) => {
+      if (!container.contains(e.relatedTarget as Node | null)) {
+        close(80);
+      }
+    });
+
+    menu.addEventListener('mouseenter', open);
+    menu.addEventListener('mouseleave', () => close());
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+      if (expanded) {
+        close(0);
+      } else {
+        open();
+      }
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => close(0));
+    });
+  });
+
+  window.addEventListener('click', () => {
+    dropdownContainers.forEach(container => {
+      const btn = container.querySelector('button');
+      const menu = container.querySelector('.dropdown-menu');
+      if (btn && menu instanceof HTMLElement) {
+        closeDropdown(container as HTMLElement, btn as HTMLButtonElement, menu, 0);
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      dropdownContainers.forEach(container => {
+        const btn = container.querySelector('button');
+        const menu = container.querySelector('.dropdown-menu');
+        if (btn && menu instanceof HTMLElement) {
+          closeDropdown(container as HTMLElement, btn as HTMLButtonElement, menu, 0);
         }
       });
     }

@@ -2,10 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Home" description="No platform bias. Just results. We build premium, high-performance websites across Shopify, Wix Studio, WordPress, and Custom React/Astro applications.">
+<Layout
+  title="Shopify, Wix Studio, WordPress & Custom Web Development"
+  description="Codivex builds high-performance Shopify, Wix Studio, WordPress, and custom Next.js/Astro experiences for startups, growth-stage brands, and enterprises."
+  keywords="shopify development, wix studio, wordpress development, nextjs astro agency, ecommerce website development"
+>
   
   <!-- 1. HERO SECTION -->
-  <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-surface">
+  <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-surface" aria-labelledby="hero-heading">
     <!-- Geometric decorative lights (backlight) -->
     <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary-maroon/10 rounded-full blur-[120px] pointer-events-none"></div>
     <div class="absolute bottom-0 right-1/10 w-[600px] h-[400px] bg-primary-maroon/5 rounded-full blur-[150px] pointer-events-none"></div>
@@ -18,17 +22,17 @@ import Layout from '../layouts/Layout.astro';
       <!-- Premium Tag -->
       <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-xs font-semibold text-primary-accent tracking-[0.1em] uppercase mb-8 animate-fade-in">
         <span class="w-1.5 h-1.5 bg-primary-accent rounded-full animate-ping"></span>
-        Digital Architecture Studio
+        Growth • Strategy • Engineering
       </div>
 
       <!-- Headline H1 -->
-      <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-[-0.02em] leading-[1.1] max-w-[950px] mx-auto mb-6">
-        We Build High-Performance <span class="bg-gradient-to-r from-secondary-silver via-white to-primary-accent bg-clip-text text-transparent">Digital Experiences.</span> No Tech Bias. Just Results.
+      <h1 id="hero-heading" class="text-4xl md:text-6xl font-extrabold text-white tracking-[-0.02em] leading-[1.1] max-w-[950px] mx-auto mb-6">
+        We Help Brands <span class="bg-gradient-to-r from-secondary-silver via-white to-primary-accent bg-clip-text text-transparent">Grow With Clarity.</span> Fast, Flexible, Future-Ready Digital Systems.
       </h1>
 
       <!-- Subheadline -->
       <p class="text-base md:text-xl text-secondary-silver max-w-[800px] mx-auto leading-relaxed mb-12">
-        From seamless visual websites built on Wix Studio and WordPress to custom-engineered platforms using Shopify, Next.js, and Astro. We align the perfect tech stack with your business scale.
+        From launch-ready websites to long-term growth systems, we build digital experiences that are easier to maintain, easier to scale, and easier for your audience to trust.
       </p>
 
       <!-- CTAs -->
@@ -38,16 +42,56 @@ import Layout from '../layouts/Layout.astro';
           class="w-full sm:w-auto px-8 py-4 text-base font-bold text-white bg-primary-maroon border border-primary-accent/40 rounded-default glow-btn-primary hover:text-white transition-all shadow-lg text-center"
           style="box-shadow: inset 0 1px 0 rgba(255, 179, 181, 0.2);"
         >
-          Book a Tech Strategy Call
+          Book a Growth Strategy Call
         </a>
         <a 
           href="#pillars" 
           class="w-full sm:w-auto px-8 py-4 text-base font-bold text-secondary-silver bg-surface-container-low border border-outline-ghost rounded-default hover:bg-surface-container hover:text-white transition-all text-center"
         >
-          Explore Our Stacks
+          See Which Option Fits Your Business
         </a>
       </div>
 
+    </div>
+  </section>
+
+  <!-- 3. PROOF + CTA SECTION -->
+  <section class="py-8 md:py-10 bg-surface-container-lowest border-b border-outline-ghost/30">
+    <div class="max-w-[1280px] mx-auto px-4 md:px-8">
+      <div class="rounded-2xl border border-primary-accent/20 bg-gradient-to-br from-primary-maroon/20 via-surface-container-low to-surface-container p-6 md:p-8 shadow-[0_0_40px_rgba(128,0,32,0.18)]">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+          <div class="max-w-[700px]">
+            <p class="text-[10px] font-bold uppercase tracking-[0.24em] text-primary-accent mb-3">Why teams choose Codivex</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Clear strategy, faster launches, and a platform that supports growth.</h2>
+            <p class="text-sm md:text-base text-secondary-silver leading-relaxed">
+              We help founders and teams move from idea to launch without the usual rework, confusion, or overbuilt tech. The result is a cleaner experience, better performance, and a system that scales with the business.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 rounded-default bg-primary-maroon border border-primary-accent/40 text-sm font-semibold text-white hover:text-white transition-all">Book a Strategy Call</a>
+            <a href="#case-studies" class="inline-flex items-center justify-center px-6 py-3 rounded-default border border-outline-ghost bg-surface-container-low text-sm font-semibold text-secondary-silver hover:text-white transition-all">See Example Outcomes</a>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="rounded-default border border-outline-ghost/40 bg-surface-container-low p-4">
+            <p class="text-2xl font-bold text-white">2–6 weeks</p>
+            <p class="text-sm text-secondary-silver mt-1">for focused launch sprints</p>
+          </div>
+          <div class="rounded-default border border-outline-ghost/40 bg-surface-container-low p-4">
+            <p class="text-2xl font-bold text-white">+25%+</p>
+            <p class="text-sm text-secondary-silver mt-1">typical conversion uplift focus</p>
+          </div>
+          <div class="rounded-default border border-outline-ghost/40 bg-surface-container-low p-4">
+            <p class="text-2xl font-bold text-white">SEO-ready</p>
+            <p class="text-sm text-secondary-silver mt-1">structure from day one</p>
+          </div>
+          <div class="rounded-default border border-outline-ghost/40 bg-surface-container-low p-4">
+            <p class="text-2xl font-bold text-white">1:1 support</p>
+            <p class="text-sm text-secondary-silver mt-1">from strategy to rollout</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -55,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="py-12 bg-surface-container-lowest border-y border-outline-ghost/30 overflow-hidden relative">
     <div class="max-w-[1280px] mx-auto px-4 md:px-8 mb-4">
       <p class="text-center text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant/60">
-        Trusted Engineering & Official Deployments
+        Trusted By Teams That Value Speed, Reliability, and Growth
       </p>
     </div>
 
@@ -71,49 +115,128 @@ import Layout from '../layouts/Layout.astro';
         <!-- Group 1 -->
         <div class="flex items-center gap-12 text-sm font-semibold text-secondary-silver">
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-green-500 rounded-full"></span> Official Shopify Developer
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span> ClothingNexus
           </span>
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-blue-500 rounded-full"></span> Wix Studio Partner
+            <span class="w-2 h-2 bg-blue-500 rounded-full"></span> TheClickCreate
           </span>
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-primary-accent rounded-full"></span> WordPress Core Contributor
+            <span class="w-2 h-2 bg-primary-accent rounded-full"></span> Cinorium
           </span>
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-white rounded-full"></span> Vercel Verified
+            <span class="w-2 h-2 bg-white rounded-full"></span> BlinksArts
           </span>
-          <span class="text-white/20 tracking-wider">APEX BRAND</span>
-          <span class="text-white/20 tracking-wider">ZENITH CORP</span>
-          <span class="text-white/20 tracking-wider">VELO LABS</span>
-          <span class="text-white/20 tracking-wider">ACME GROUP</span>
+          <span class="text-white/20 tracking-wider">Tooniwear</span>
+          <span class="text-white/20 tracking-wider">Shopify Growth</span>
+          <span class="text-white/20 tracking-wider">Brand Systems</span>
+          <span class="text-white/20 tracking-wider">Digital Launches</span>
         </div>
 
         <!-- Group 2 (Duplicate for Infinite Loop) -->
         <div class="flex items-center gap-12 text-sm font-semibold text-secondary-silver">
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-green-500 rounded-full"></span> Official Shopify Developer
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span> ClothingNexus
           </span>
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-blue-500 rounded-full"></span> Wix Studio Partner
+            <span class="w-2 h-2 bg-blue-500 rounded-full"></span> TheClickCreate
           </span>
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-primary-accent rounded-full"></span> WordPress Core Contributor
+            <span class="w-2 h-2 bg-primary-accent rounded-full"></span> Cinorium
           </span>
           <span class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-white rounded-full"></span> Vercel Verified
+            <span class="w-2 h-2 bg-white rounded-full"></span> BlinksArts
           </span>
-          <span class="text-white/20 tracking-wider">APEX BRAND</span>
-          <span class="text-white/20 tracking-wider">ZENITH CORP</span>
-          <span class="text-white/20 tracking-wider">VELO LABS</span>
-          <span class="text-white/20 tracking-wider">ACME GROUP</span>
+          <span class="text-white/20 tracking-wider">Tooniwear</span>
+          <span class="text-white/20 tracking-wider">Shopify Growth</span>
+          <span class="text-white/20 tracking-wider">Brand Systems</span>
+          <span class="text-white/20 tracking-wider">Digital Launches</span>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- 4. BUILT FOR EVERY STAGE OF GROWTH -->
+  <section class="py-20 md:py-28 bg-surface-container-lowest border-y border-outline-ghost/30">
+    <div class="max-w-[1280px] mx-auto px-4 md:px-8">
+      <div class="max-w-[800px] mx-auto text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-[10px] font-bold text-primary-accent tracking-[0.16em] uppercase mb-5">
+          Built for every stage
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-5">
+          Friendly for founders, operators, and technical teams alike
+        </h2>
+        <p class="text-base md:text-lg text-secondary-silver leading-relaxed">
+          Some clients already know the platform they want. Others simply need a trusted partner to help them grow, modernize, or maintain what already works. We support both.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-8 rounded-lg border border-outline-ghost/50 bg-surface-container-low">
+          <h3 class="text-xl font-bold text-white mb-3">Startups & Indie Brands</h3>
+          <p class="text-sm text-on-surface-variant/90 leading-relaxed mb-4">
+            Launch quickly, look credible, and avoid overbuilding. We help you start with a clear strategy and a solid foundation.
+          </p>
+          <a href="#contact" class="text-sm font-semibold text-primary-accent hover:text-white transition-colors">Start simple and grow smart →</a>
+        </div>
+        <div class="p-8 rounded-lg border border-outline-ghost/50 bg-surface-container-low">
+          <h3 class="text-xl font-bold text-white mb-3">Growing Businesses</h3>
+          <p class="text-sm text-on-surface-variant/90 leading-relaxed mb-4">
+            Improve conversions, speed, SEO, and content operations without slowing your team down or adding unnecessary complexity.
+          </p>
+          <a href="#contact" class="text-sm font-semibold text-primary-accent hover:text-white transition-colors">Modernize with less friction →</a>
+        </div>
+        <div class="p-8 rounded-lg border border-outline-ghost/50 bg-surface-container-low">
+          <h3 class="text-xl font-bold text-white mb-3">Established Brands & Enterprises</h3>
+          <p class="text-sm text-on-surface-variant/90 leading-relaxed mb-4">
+            Scale with stronger architecture, integrations, governance, and performance across teams, markets, and channels.
+          </p>
+          <a href="#contact" class="text-sm font-semibold text-primary-accent hover:text-white transition-colors">Build for long-term scale →</a>
+        </div>
+      </div>
+
+      <div class="mt-10 rounded-lg border border-primary-accent/20 bg-primary-maroon/10 p-6 text-center text-sm text-secondary-silver">
+        No jargon required. If you do not know the technology, we will explain it in plain English and connect it to business outcomes.
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-24 bg-surface border-b border-outline-ghost/30">
+    <div class="max-w-[1280px] mx-auto px-4 md:px-8">
+      <div class="rounded-2xl border border-outline-ghost/40 bg-surface-container-low p-8 md:p-10">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
+          <div>
+            <p class="text-[10px] font-bold uppercase tracking-[0.24em] text-primary-accent mb-3">Ready to grow smarter?</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">A better website or commerce experience should feel easier to manage and easier to convert.</h2>
+            <p class="text-base text-secondary-silver leading-relaxed">
+              Whether you need a faster storefront, a cleaner content system, or a more thoughtful digital foundation, we help you choose the right path and ship it with clarity.
+            </p>
+          </div>
+          <div class="rounded-xl border border-outline-ghost/40 bg-surface-container p-6 space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-primary-accent"></span>
+              <p class="text-sm text-secondary-silver">Platform guidance based on your goals, budget, and growth stage</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-primary-accent"></span>
+              <p class="text-sm text-secondary-silver">Performance, SEO, and UX improvements that make the site work harder</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-primary-accent"></span>
+              <p class="text-sm text-secondary-silver">Launch support that keeps the project moving without hidden complexity</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <a href="#contact" class="inline-flex justify-center px-5 py-3 rounded-default bg-primary-maroon border border-primary-accent/40 text-sm font-semibold text-white">Start Your Project</a>
+              <a href="mailto:codivexagency@gmail.com" class="inline-flex justify-center px-5 py-3 rounded-default border border-outline-ghost text-sm font-semibold text-secondary-silver hover:text-white">Email the Team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 4. THE CROSSROAD: FIND YOUR STACK -->
-  <section class="py-24 md:py-32 bg-surface relative" id="pillars">
+  <section class="py-24 md:py-32 bg-surface relative" id="pillars" aria-labelledby="platforms-heading">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[500px] bg-primary-maroon/5 blur-[150px] pointer-events-none rounded-full"></div>
 
     <div class="max-w-[1280px] mx-auto px-4 md:px-8 relative z-10">
@@ -121,10 +244,10 @@ import Layout from '../layouts/Layout.astro';
       <!-- Section Header -->
       <div class="text-center mb-16 max-w-[800px] mx-auto">
         <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
-          The Right Foundation for Every Digital Strategy
+          The Right Foundation for Your Growth Stage
         </h2>
         <p class="text-base md:text-lg text-secondary-silver">
-          We engineer websites based on your operational model, budget, and long-term scaling goals.
+          We help founders, growing teams, and established brands choose the approach that fits their goals, budget, and operating model.
         </p>
       </div>
 
@@ -408,7 +531,7 @@ import Layout from '../layouts/Layout.astro';
             Proven Performance Results
           </h2>
           <p class="text-base md:text-lg text-secondary-silver max-w-[600px]">
-            We deploy production-grade experiences designed to convert, load instantly, and scale.
+            We help brands launch faster, simplify their stack, and create digital experiences that are easier to manage and easier to convert.
           </p>
         </div>
         <div>
@@ -437,10 +560,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="p-6 md:p-8">
               <span class="inline-block text-[10px] font-bold text-green-400 bg-green-500/10 border border-green-500/30 rounded-full px-2.5 py-0.5 uppercase tracking-wider mb-4">Shopify Ecosystem</span>
               <h3 class="text-lg font-bold text-white mb-3 leading-snug">
-                How we built a 100-SKU dynamic storefront on Shopify, boosting conversion rates by 35%.
+                Faster Shopify storefronts with clearer product paths and less checkout friction.
               </h3>
               <p class="text-sm text-on-surface-variant/80 leading-relaxed mb-6">
-                Redesigned collection filters and implemented Native Checkout Extensibility to reduce friction, resulting in optimized LCP and checkout conversions.
+                We shape the experience around better navigation, simpler merchandising, and stronger conversion flow for commerce brands that need to grow without added complexity.
               </p>
             </div>
           </div>
@@ -466,10 +589,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="p-6 md:p-8">
               <span class="inline-block text-[10px] font-bold text-purple-400 bg-purple-500/10 border border-purple-500/30 rounded-full px-2.5 py-0.5 uppercase tracking-wider mb-4">Custom Code (Astro)</span>
               <h3 class="text-lg font-bold text-white mb-3 leading-snug">
-                Migrating an enterprise blog to an Astro content engine, cutting hosting costs to zero.
+                High-performance content systems built for speed, scale, and lower operating cost.
               </h3>
               <p class="text-sm text-on-surface-variant/80 leading-relaxed mb-6">
-                Decoupled a legacy corporate blog onto Astro and Netlify, rendering thousands of content nodes into flat HTML and decreasing loading times to 0.4s.
+                We modernize publishing workflows and edge delivery so teams can publish faster, reduce overhead, and create a more responsive experience for visitors.
               </p>
             </div>
           </div>
@@ -495,10 +618,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="p-6 md:p-8">
               <span class="inline-block text-[10px] font-bold text-blue-400 bg-blue-500/10 border border-blue-500/30 rounded-full px-2.5 py-0.5 uppercase tracking-wider mb-4">Wix Studio</span>
               <h3 class="text-lg font-bold text-white mb-3 leading-snug">
-                Launching a complex multi-service booking platform in record time using Wix Studio.
+                Launch-ready service sites with smarter booking flows and polished visual experiences.
               </h3>
               <p class="text-sm text-on-surface-variant/80 leading-relaxed mb-6">
-                Created responsive custom reservation flows utilizing Wix Bookings APIs and Velo script databases to launch in just two weeks with zero server overhead.
+                We combine visual design, structure, and lightweight logic so service brands can launch quickly while still feeling premium and conversion-focused.
               </p>
             </div>
           </div>
@@ -514,7 +637,76 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 8. FINAL CONVERSION BLOCK (INTERACTIVE FORM CAPTURE & CONTACT CHANNELS) -->
+  <!-- 8. FAQ SECTION (AEO / SEARCH-INTENT) -->
+  <section class="py-24 md:py-32 bg-surface border-t border-outline-ghost/30" id="faqs">
+    <div class="max-w-[1100px] mx-auto px-4 md:px-8">
+      <div class="text-center mb-12 max-w-[760px] mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-accent/20 bg-primary-maroon/10 text-[10px] font-bold text-primary-accent tracking-[0.16em] uppercase mb-5">
+          Frequently Asked Questions
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-5">
+          Answers Searchers Actually Want
+        </h2>
+        <p class="text-base md:text-lg text-secondary-silver leading-relaxed">
+          These FAQs help visitors quickly understand platform choices, migration scope, performance goals, and how we approach premium digital builds.
+        </p>
+      </div>
+
+      <div class="grid gap-4">
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7" open>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Which platform is best for my business: Shopify, Wix Studio, WordPress, or custom Astro/Next.js?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            We match the platform to your commercial model, content volume, integrations, and growth plans. Shopify is ideal for commerce-first brands, Wix Studio for fast visual launches, WordPress for content-heavy operations, and custom Astro or Next.js builds for performance-critical or highly customized experiences.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can you redesign an existing website and improve SEO at the same time?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes. Our process combines UX restructuring, technical SEO improvements, content hierarchy refinement, and performance tuning so the new experience is both more compelling and easier for search engines to understand.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Do you offer migration services from another platform?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Absolutely. We handle migrations from legacy CMS setups, older ecommerce platforms, and custom stacks, including structure mapping, content transfer, SEO preservation, and post-launch validation.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">How long does a typical website or commerce build take?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Timeline depends on scope, integrations, and content readiness. A focused launch can be delivered quickly, while larger commerce or custom-engineered projects usually follow a phased roadmap with clear milestones and review checkpoints.
+          </div>
+        </details>
+
+        <details class="group rounded-lg border border-outline-ghost/50 bg-surface-container-low p-6 md:p-7">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+            <span class="text-lg font-semibold text-white">Can you improve site speed, Core Web Vitals, and conversion rates on an existing project?</span>
+            <span class="text-2xl text-primary-accent transition-transform duration-200 group-open:rotate-45">+</span>
+          </summary>
+          <div class="mt-4 text-sm leading-relaxed text-on-surface-variant/90">
+            Yes. We audit performance bottlenecks, compress delivery paths, simplify front-end architecture, and improve key interactions so the experience feels faster and converts more reliably across mobile and desktop.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FINAL CONVERSION BLOCK (INTERACTIVE FORM CAPTURE & CONTACT CHANNELS) -->
   <section class="py-24 md:py-32 bg-surface relative" id="contact">
     <!-- Red glowing bulb behind form -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-primary-maroon/10 rounded-full blur-[180px] pointer-events-none"></div>
@@ -782,6 +974,55 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
 </Layout>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which platform is best for my business: Shopify, Wix Studio, WordPress, or custom Astro/Next.js?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We match the platform to your commercial model, content volume, integrations, and growth plans. Shopify is ideal for commerce-first brands, Wix Studio for fast visual launches, WordPress for content-heavy operations, and custom Astro or Next.js builds for performance-critical or highly customized experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you redesign an existing website and improve SEO at the same time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our process combines UX restructuring, technical SEO improvements, content hierarchy refinement, and performance tuning so the new experience is both more compelling and easier for search engines to understand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer migration services from another platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We handle migrations from legacy CMS setups, older ecommerce platforms, and custom stacks, including structure mapping, content transfer, SEO preservation, and post-launch validation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical website or commerce build take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Timeline depends on scope, integrations, and content readiness. A focused launch can be delivered quickly, while larger commerce or custom-engineered projects usually follow a phased roadmap with clear milestones and review checkpoints."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you improve site speed, Core Web Vitals, and conversion rates on an existing project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We audit performance bottlenecks, compress delivery paths, simplify front-end architecture, and improve key interactions so the experience feels faster and converts more reliably across mobile and desktop."
+        }
+      }
+    ]
+  }
+</script>
 
 <script>
   // Custom Selection Pills Handler
